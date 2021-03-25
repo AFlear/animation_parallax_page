@@ -27,7 +27,7 @@ $button-normal-padding-x: (
         sm: 30px,
         md: 30px,
         lg: 35px,
-        xl: 40px
+        xl: 37px
 );
 
 $button-normal-padding-y: (
@@ -63,6 +63,10 @@ $button-lg-padding-y: (
         padding: map-get($button-sm-padding-y, $breakpoint) map-get($button-sm-padding-x, $breakpoint);
       }
 
+      &--md {
+        padding: map-get($button-sm-padding-y, $breakpoint) map-get($button-sm-padding-x, $breakpoint);
+      }
+
       &--lg {
         padding: map-get($button-lg-padding-y, $breakpoint) map-get($button-lg-padding-x, $breakpoint);
       }
@@ -93,10 +97,16 @@ $button-lg-padding-y: (
     font-weight: bold;
   }
 
+  &--md {
+    @include button-p1;
+    font-weight: bold;
+  }
+
   &--lg {
     @include button-p1;
+
     width: 100%;
-    padding: 16.5px 20px;
+    //padding: 18px 22px;
     font-weight: bold;
 
     @include media-breakpoint-up(sm) {

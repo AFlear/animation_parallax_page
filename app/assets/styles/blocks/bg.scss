@@ -7,48 +7,104 @@
     margin: auto;
 
     &--dots {
-      width: 153.88px;
-      height: 84.36px;
       top: 0;
       background-image: url("../images/svg/dots.svg");
       z-index: 1;
 
-      @include media-breakpoint-up(sm) {
-        width: 306.74px;
-        height: 168.17px;
+      &_s {
+        width: 171.93px;
+        height: 94.32px;
+
+        @include media-breakpoint-up(sm) {
+          width: 284.34px;
+          height: 155.98px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 350px;
+          height: 192px;
+        }
       }
 
-      @include media-breakpoint-up(lg) {
-        width: 456px;
-        height: 250px;
+      &_l {
+        width: 153.88px;
+        height: 84.36px;
+
+        @include media-breakpoint-up(sm) {
+          width: 306.74px;
+          height: 168.17px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 456px;
+          height: 250px;
+        }
       }
     }
 
     &--blot {
-      width: 213.27px;
-      height: 228.8px;
       top: -10px;
       right: -85px;
       background-image: url("../images/svg/bg-figure.svg");
       z-index: 2;
 
-      @include media-breakpoint-up(sm) {
-        width: 425.12px;
-        height: 456.07px;
+      &_m {
+        width: 254px;
+        height: 273px;
+
+        @include media-breakpoint-up(sm) {
+          width: 420px;
+          height: 452px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 518px;
+          height: 556px;
+        }
       }
 
-      @include media-breakpoint-up(lg) {
-        width: 632px;
-        height: 678px;
+      &_l {
+        width: 213.27px;
+        height: 228.8px;
+
+        @include media-breakpoint-up(sm) {
+          width: 425.12px;
+          height: 456.07px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 632px;
+          height: 678px;
+        }
       }
     }
 
-    &--picure {
+    &--mac {
       width: 300px;
       height: 225.08px;
       top: -22px;
       right: -90px;
       background-image: url("../images/png/imac.png");
+      z-index: 3;
+
+      @include media-breakpoint-up(sm) {
+        width: 598px;
+        height: 448.67px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 682px;
+        height: 646px;
+        background-size: auto;
+      }
+    }
+
+    &--watch {
+      width: 300px;
+      height: 225.08px;
+      top: -22px;
+      right: -90px;
+      background-image: url("../images/png/watch.png");
       z-index: 3;
 
       @include media-breakpoint-up(sm) {
