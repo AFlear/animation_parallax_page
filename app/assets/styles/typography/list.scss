@@ -1,0 +1,73 @@
+// default
+// sass-lint:disable no-descending-specificity
+
+ul,
+ol {
+  @include p1-mb;
+  padding: 0 0 0 5rem;
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+// custom
+
+.ul,
+.ol {
+  padding-left: 4.5rem;
+
+  @include media-breakpoint-only(sm) {
+    padding-left: 7rem;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding-left: 7.5rem;
+  }
+
+  @include media-breakpoint-only(lg) {
+    padding-left: 6rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-left: 6.5rem;
+  }
+
+  li {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// custom UL
+
+//.ul {
+//  list-style-type: none;
+//
+//  li {
+//    list-style-type: none;
+//  }
+//
+//  &--dash {
+//    li {
+//      clear: both;
+//
+//      &:before {
+//        width: 2.5rem;
+//        margin: 0 0 0 -2.5rem;
+//        float: left;
+//        color: $yellow-dark;
+//        font-size: 80%;
+//        font-weight: bold;
+//        content: "—";
+//      }
+//
+//      &:after {
+//        display: block;
+//        clear: both;
+//        content: "";
+//      }
+//    }
+//  }
+//}

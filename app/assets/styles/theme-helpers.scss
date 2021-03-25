@@ -1,0 +1,189 @@
+// border
+
+.rounded-xs-0 {
+  @include media-breakpoint-only(xs) {
+    border-radius: 0 !important;
+  }
+}
+
+.rounded-sm-0 {
+  @include media-breakpoint-only(sm) {
+    border-radius: 0 !important;
+  }
+}
+
+.rounded-xs-lg {
+  @include media-breakpoint-only(xs) {
+    border-radius: $border-radius-lg !important;
+  }
+}
+
+// width
+
+.mw-xs-320 {
+  @include media-breakpoint-only(xs) {
+    max-width: 320px;
+  }
+}
+
+.mw-xs-450 {
+  @include media-breakpoint-only(xs) {
+    max-width: 450px;
+  }
+}
+
+// z-index
+
+.z-index-n1 {
+  z-index: -1;
+}
+
+.z-index-5 {
+  z-index: 5;
+}
+
+.z-index-15 {
+  z-index: 15;
+}
+
+// text
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+// position
+
+.position-relative-up-1366 {
+  @media (min-width: 1366px) {
+    position: relative;
+  }
+}
+
+.position-relative-down-1366 {
+  @media (max-width: 1365.98px) {
+    position: relative;
+  }
+}
+
+.position-fixed-bottom-0 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9991;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+// transform: rotate
+
+.transform-rotate-5 {
+  transform: rotate(0.5deg);
+}
+
+.transform-rotate-n5 {
+  transform: rotate(-0.5deg);
+}
+
+// margin
+
+.ml-flexible-30 {
+  margin-left: 15px;
+
+  @include media-breakpoint-up(md) {
+    margin-left: 20px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-left: 25px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-left: 30px;
+  }
+}
+
+.mr--flexible-30 {
+  margin-right: 15px;
+
+  @include media-breakpoint-up(md) {
+    margin-right: 20px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-right: 25px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-right: 30px;
+  }
+}
+
+.mx--flexible-30 {
+  margin-right: 15px;
+  margin-left: 15px;
+
+  @include media-breakpoint-up(md) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+
+// overflow
+
+.overflow-xs-auto {
+  @include media-breakpoint-only(xs) {
+    overflow: auto;
+  }
+}
+
+// flex
+
+.flex-xs-nowrap {
+  @include media-breakpoint-only(xs) {
+    flex-wrap: nowrap;
+  }
+}
+
+// object-fit
+.object-fit-scale-down {
+  object-fit: scale-down;
+}
+
+//custom width container
+.container {
+  @media (min-width: 1400px) {
+    max-width: 1205px;
+  }
+}
+
+//box-shadow
+$box-shadow-primary: 0 2px 16px rgba(32, 108, 164, 0.16);
+
+.shadow-primary {
+  box-shadow: $box-shadow-primary;
+}

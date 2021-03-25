@@ -1,0 +1,80 @@
+.hamburger {
+  $root: &;
+  width: 20px;
+  height: 20px;
+  margin-left: 2rem;
+
+  @include media-breakpoint-only(sm) {
+    margin-left: calc(4rem + 2px);
+  }
+
+  @include media-breakpoint-only(md) {
+    margin-left: calc(2rem + 2px);
+  }
+
+  &__input {
+    + #{$root}__label {
+      #{$root}__line {
+        &:first-child {
+          transition: top 0.175s 0.175s, transform 0.175s;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          transition: top 0.175s 0.175s, transform 0.175s;
+        }
+      }
+    }
+
+    &:checked + #{$root}__label {
+      #{$root}__line {
+        left: 3px;
+        width: 14px;
+
+        &:first-child {
+          top: 9px;
+          transform: rotate(45deg);
+          transition: top 0.175s, transform 0.175s 0.175s;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          top: 9px;
+          transform: rotate(-45deg);
+          transition: top 0.175s, transform 0.175s 0.175s;
+        }
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    transition: all 0.5s;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  &__line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    transition: top 0.525s;
+    background: $black;
+
+    &:first-child {
+      top: 4px;
+    }
+
+    &:nth-child(2) {
+      top: 9px;
+    }
+
+    &:nth-child(3) {
+      top: 14px;
+    }
+  }
+}

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f876c12-84b5-4517-838f-1294e6477acf" name="Default Changelist" comment="Create the test project and install webpack modules">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webpack-boilerplate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/fonts/open-sans-v18-latin-700.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/fonts/open-sans-v18-latin-700.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/fonts/open-sans-v18-latin-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/fonts/open-sans-v18-latin-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/blocks/button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/blocks/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/blocks/hamburger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/blocks/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/theme-colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/theme-helpers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/typography/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/typography/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/typography/body.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/typography/fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/typography/heading.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/typography/link.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/typography/list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/typography/p.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/styles/typography/table.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stylelintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/styles/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1q9vxeke3hygPlFGQHYacTJZY2s" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/fonts" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="C:\Users\AFlear\WebstormProjects\webpack-boilerplate\node_modules\stylelint" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Sass" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AFlear\WebstormProjects\webpack-boilerplate\app\assets\styles\typography" />
+      <recent name="C:\Users\AFlear\WebstormProjects\webpack-boilerplate\app\assets\styles\blocks" />
+      <recent name="C:\Users\AFlear\WebstormProjects\webpack-boilerplate\app\assets\styles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AFlear\WebstormProjects\webpack-boilerplate\app\assets\fonts" />
+      <recent name="C:\Users\AFlear\WebstormProjects\webpack-boilerplate\app\assets\styles\blocks" />
+      <recent name="C:\Users\AFlear\WebstormProjects\webpack-boilerplate\app\assets\styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\AFlear\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f876c12-84b5-4517-838f-1294e6477acf" name="Default Changelist" comment="" />
+      <created>1616504867488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616504867488</updated>
+      <workItem from="1616504869256" duration="20202000" />
+      <workItem from="1616589763323" duration="14550000" />
+      <workItem from="1616676982937" duration="2287000" />
+    </task>
+    <task id="LOCAL-00001" summary="Create the test project and install webpack modules">
+      <created>1616520662110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616520662111</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create the test project and install webpack modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create the test project and install webpack modules" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="592" y="429" key="#Stylelint" timestamp="1616605909899">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="592" y="429" key="#Stylelint/0.0.1920.1080@0.0.1920.1080" timestamp="1616605909899" />
+    <state x="654" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616592437604">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="654" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1616592437604" />
+    <state x="469" y="127" key="CommitChangelistDialog2" timestamp="1616520339932">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="127" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1616520339932" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1616519896862">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1616519896862" />
+    <state x="811" y="438" key="Github.ShareDialog" timestamp="1616520362792">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="811" y="438" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1616520362792" />
+    <state width="1899" height="295" key="GridCell.Tab.0.bottom" timestamp="1616679369522">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1616679369522" />
+    <state width="1899" height="295" key="GridCell.Tab.0.center" timestamp="1616679369522">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1616679369522" />
+    <state width="1899" height="295" key="GridCell.Tab.0.left" timestamp="1616679369521">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1616679369521" />
+    <state width="1899" height="295" key="GridCell.Tab.0.right" timestamp="1616679369522">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1616679369522" />
+    <state x="461" y="185" key="SettingsEditor" timestamp="1616538623620">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1616538623620" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1616520668063">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1616520668063" />
+    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1616677852937">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1616677852937" />
+    <state x="732" y="431" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1616520351898">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="732" y="431" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1616520351898" />
+  </component>
+</project>

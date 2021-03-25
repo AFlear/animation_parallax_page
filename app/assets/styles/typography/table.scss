@@ -1,0 +1,48 @@
+//.table {
+//  margin: 0;
+//
+//  thead,
+//  tbody {
+//    th,
+//    td {
+//      font-weight: normal;
+//      vertical-align: top;
+//
+//      @include media-breakpoint-down(sm) {
+//        min-width: 140px;
+//      }
+//
+//      @include media-breakpoint-only(xs) {
+//        padding: 1.8rem 1.35rem;
+//      }
+//
+//      @include media-breakpoint-only(sm) {
+//        padding: 0.8rem 0.35rem;
+//      }
+//    }
+//  }
+//
+//  thead {
+//    th {
+//      border-bottom-width: $table-border-width;
+//
+//      @include media-breakpoint-only(xs) {
+//        padding-top: 1rem;
+//        padding-bottom: 1rem;
+//      }
+//    }
+//  }
+//
+//  tbody {
+//    th {
+//      background-color: $yellow-normal;
+//    }
+//  }
+//}
+//
+//.touch {
+//  .table {
+//    // we need bottom margin for fixed x-scrollbar on touch devices
+//    margin-bottom: $table-border-width;
+//  }
+//}

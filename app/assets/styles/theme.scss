@@ -1,0 +1,64 @@
+@import "~bootstrap/scss/bootstrap";
+@import "theme-colors";
+@import "theme-helpers";
+
+//blocks components
+@import "typography/typography";
+@import "blocks/hamburger";
+@import "blocks/button";
+@import "blocks/header";
+@import "blocks/footer";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#icon {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  animation: icon 1s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+#belvi {
+  opacity: 0;
+  animation: fadein1 1s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes icon {
+  0% {
+    transform: scale(1.5) translate(-10px, -10px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+}

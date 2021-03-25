@@ -1,0 +1,23 @@
+h1,
+.h1 {
+  @include h1;
+  //@include ff-tenor-sans;
+}
+
+h2,
+.h2 {
+  @include h2;
+  //@include ff-tenor-sans;
+}
+
+h3,
+.h3 {
+  @include h3;
+  //@include ff-tenor-sans;
+  letter-spacing: -0.5px;
+}
+
+//h4,
+//.h4 {
+//  @include h4;
+//}

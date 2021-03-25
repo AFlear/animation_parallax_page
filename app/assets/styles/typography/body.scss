@@ -1,0 +1,14 @@
+body {
+  @include p1;
+  @include ff-open-sans;
+  //overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+
+  * {
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+  }
+}

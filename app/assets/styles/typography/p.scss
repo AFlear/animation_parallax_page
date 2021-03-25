@@ -1,0 +1,23 @@
+.p {
+  @include p1-mb;
+
+  &:empty {
+    @extend .d-none;
+  }
+}
+
+.p1 {
+  @include p1;
+}
+
+.p2 {
+  @include p2;
+}
+
+.p3 {
+  @include p3;
+}
+
+p {
+  @extend .p1;
+}

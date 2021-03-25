@@ -1,0 +1,100 @@
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  z-index: 100;
+  padding: 1rem 0;
+
+  &__menu-link {
+    margin-right: 15px;
+    margin-bottom: 0;
+
+    //@include media-breakpoint-between(sm, md) {
+    //  margin: 0 0 1rem;
+    //}
+
+    @include media-breakpoint-up(lg) {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      color: $grey-light;
+      font-size: 15px;
+      line-height: 22.5px;
+    }
+  }
+
+  &__menu-wrapper {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      position: fixed;
+      right: 0;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      transition: visibility 0.35s ease, opacity 0.35s ease;
+      background-color: $white;
+      opacity: 0;
+      overflow: auto;
+      visibility: hidden;
+      z-index: 100;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    @include media-breakpoint-between(xs, md) {
+      padding: 1.75rem 0 3.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      @include p1;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 1rem 0;
+    }
+  }
+}
+
+// opened menu
+
+html {
+  &.menu-open {
+    @include media-breakpoint-down(md) {
+      overflow: hidden;
+
+      body {
+        max-height: 100vh;
+        overflow: hidden;
+      }
+
+      main,
+      footer {
+        user-select: none;
+      }
+
+      .header {
+        position: fixed; // remove bounce effect on iPhone
+
+        &__menu-wrapper {
+          transition: visibility 0.7s ease, opacity 0.35s ease;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

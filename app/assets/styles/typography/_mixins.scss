@@ -1,0 +1,73 @@
+// headings
+
+@mixin h1 {
+  font-size: 4.5rem; //42px
+  line-height: 5rem; //50.4
+}
+
+@mixin h2 {
+  font-size: 3.5rem; //32
+  line-height: 4rem; //38
+}
+
+@mixin h3 {
+  @include media-breakpoint-only(xs) {
+    font-size: 2.5rem; //22
+    line-height: 3rem; //22.5 + bold
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+// paragraphs
+// paragraph-middle
+@mixin p1 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+// paragraph-small
+@mixin p2 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin p3 {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@mixin p1-mb {
+  margin-bottom: 3rem;
+}
+
+//buttons
+
+@mixin button-p1 {
+  font-size: 18px;
+  line-height: 18px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@mixin button-p2 {
+  font-size: 14px;
+  line-height: 14px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+
+// font family
+
+@mixin ff-open-sans {
+  font-family: "Open Sans", $font-family-sans-serif, sans-serif;
+}

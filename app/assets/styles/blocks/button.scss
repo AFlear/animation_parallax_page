@@ -1,0 +1,196 @@
+// padding y = padding y - border-width
+// sm
+/* stylelint-disable */
+
+$success-shadow: 0px 5px 10px rgba(76, 174, 80, 0.3);
+
+$button-sm-padding-x: (
+  xs: 22px,
+  sm: 23px,
+  md: 25px,
+  lg: 26px,
+  xl: 26px
+);
+
+$button-sm-padding-y: (
+  xs: 6px,
+  sm: 5px,
+  md: 5px,
+  lg: 7px,
+  xl: 8px
+);
+
+// normal
+
+$button-normal-padding-x: (
+  xs: 28px,
+  sm: 30px,
+  md: 30px,
+  lg: 35px,
+  xl: 40px
+);
+
+$button-normal-padding-y: (
+  xs: 8px,
+  sm: 8px,
+  md: 7px,
+  lg: 10px,
+  xl: 10px
+);
+
+$button-lg-padding-x: (
+  xs: 40px,
+  sm: 45px,
+  md: 48px,
+  lg: 49px,
+  xl: 56px
+);
+
+$button-lg-padding-y: (
+  xs: 12px,
+  sm: 13px,
+  md: 13px,
+  lg: 13px,
+  xl: 14px
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    .button {
+      padding: map-get($button-normal-padding-y, $breakpoint) map-get($button-normal-padding-x, $breakpoint);
+
+      &--sm {
+        padding: map-get($button-sm-padding-y, $breakpoint) map-get($button-sm-padding-x, $breakpoint);
+      }
+
+      &--lg {
+        padding: map-get($button-lg-padding-y, $breakpoint) map-get($button-lg-padding-x, $breakpoint);
+      }
+    }
+  }
+}
+
+.button {
+  $root: &;
+  @include ff-open-sans;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+
+  // sizes
+
+  &--sm {
+    @include button-p2;
+    min-width: 103px;
+    padding: 7px 17px;
+    font-weight: bold;
+  }
+
+  &--lg {
+    @include button-p1;
+    padding: 16.5px 20px;
+    font-weight: bold;
+  }
+
+  // color sets: normal
+
+  &--violet {
+    background-color: $violet-primary;
+    color: $white;
+    transition: color 0.3s, box-shadow 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      box-shadow: $success-shadow;
+
+    }
+
+    &.disabled,
+    &:disabled {
+      color: $white;
+    }
+  }
+
+  // color sets: outline
+
+  &--outline-gray {
+    border: 2px solid $grey-light;
+    background-color: transparent;
+    color: $grey-light;
+    transition: color 0.3s, border-color 0.3s;
+
+
+    &:hover,
+    &:focus {
+      border-color: $violet-primary;
+      background-color: transparent;
+      color: $violet-primary;
+    }
+
+    &.disabled,
+    &:disabled {
+      background-color: transparent;
+      color: $grey-light;
+    }
+  }
+
+  //&--outline-transparent-yellow-dark {
+  //  border: 2px solid $white;
+  //  background-color: transparent;
+  //  color: $white;
+  //
+  //  &:hover {
+  //    background-color: $white;
+  //    color: $yellow-dark;
+  //  }
+  //
+  //  &:focus {
+  //    background-color: $white;
+  //    color: $red-normal;
+  //  }
+  //
+  //  &.disabled,
+  //  &:disabled {
+  //    background-color: transparent;
+  //    color: $white;
+  //  }
+  //}
+
+  //&--outline-transparent-red-normal {
+  //  border: 2px solid $white;
+  //  background-color: transparent;
+  //  color: $white;
+  //
+  //  &:hover {
+  //    background-color: $white;
+  //    color: $red-normal;
+  //  }
+  //
+  //  &:focus {
+  //    background-color: $white;
+  //    color: $yellow-dark;
+  //  }
+  //
+  //  &.disabled,
+  //  &:disabled {
+  //    background-color: transparent;
+  //    color: $white;
+  //  }
+  //}
+
+  // disabled
+
+  &.disabled,
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}

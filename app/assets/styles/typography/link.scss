@@ -1,0 +1,47 @@
+.link {
+  cursor: pointer;
+
+  &--decoration-none {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--decoration-underline {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--decoration-invert {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--svg {
+    fill: $grey-light;
+
+    &:hover {
+      fill: $violet-primary;
+    }
+  }
+
+  &--color {
+    &__grey-light {
+      color: $grey-light;
+    }
+  }
+
+  &--hover-violet {
+    &:hover {
+      color: $violet-primary;
+    }
+  }
+}

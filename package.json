@@ -30,5 +30,10 @@
     "webpack": "5.11.0",
     "webpack-cli": "4.2.0",
     "webpack-dev-server": "4.0.0-beta.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "bootstrap": "^5.0.0-beta3",
+    "postcss-loader": "^5.2.0"
   }
 }

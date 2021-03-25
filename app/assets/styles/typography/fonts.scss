@@ -1,0 +1,29 @@
+$fonts-directory: "../fonts";
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Open Sans"),
+    local("OpenSans"),
+    url("#{$fonts-directory}/open-sans-v18-latin-regular.woff2") format("woff2"),
+    url("#{$fonts-directory}/open-sans-v18-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Open Sans Bold"),
+    local("OpenSans-Bold"),
+    url("#{$fonts-directory}/open-sans-v18-latin-700.woff2") format("woff2"),
+    url("#{$fonts-directory}/open-sans-v18-latin-700.woff") format("woff");
+}
+
+.ff-open-sans {
+  @include ff-open-sans;
+}

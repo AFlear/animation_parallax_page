@@ -1,4 +1,8 @@
 {
   "extends": "stylelint-config-standard",
-  "rules": {}
+  "rules": {
+    "at-rule-no-unknown": null,
+    "declaration-empty-line-before": "never",
+    "value-list-max-empty-lines": 10
+  }
 }

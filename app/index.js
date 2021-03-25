@@ -1,3 +1,3 @@
-import './assets/styles/index.scss';
+import './assets/styles/theme.scss';
 
 console.log('Boilerplate is working!');
