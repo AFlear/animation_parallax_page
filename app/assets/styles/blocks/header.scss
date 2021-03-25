@@ -4,7 +4,11 @@
   width: 100%;
   background-color: $white;
   z-index: 100;
-  padding: 1rem 0;
+  padding: 12px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 1rem 0;
+  }
 
   &__menu-link {
     margin-right: 15px;
@@ -28,7 +32,9 @@
   }
 
   &__menu-wrapper {
-    @include media-breakpoint-down(md) {
+    display: none;
+
+    @include media-breakpoint-up(md) {
       display: flex;
       position: fixed;
       right: 0;

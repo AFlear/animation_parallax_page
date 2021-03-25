@@ -24,6 +24,34 @@ $fonts-directory: "../fonts";
     url("#{$fonts-directory}/open-sans-v18-latin-700.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Epilogue"),
+    local("Epilogue"),
+    url("#{$fonts-directory}/Epilogue-Regular.woff2") format("woff2"),
+    url("#{$fonts-directory}/Epilogue-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Epilogue Bold"),
+    local("Epilogue-Bold"),
+    url("#{$fonts-directory}/Epilogue-Bold.woff2") format("woff2"),
+    url("#{$fonts-directory}/Epilogue-Bold.woff") format("woff");
+}
+
 .ff-open-sans {
   @include ff-open-sans;
+}
+
+.ff-epilogue {
+  @include ff-epilogue;
 }

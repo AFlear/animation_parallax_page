@@ -153,6 +153,26 @@
   }
 }
 
+.my--flexible-105 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 105px;
+    margin-bottom: 105px;
+  }
+}
+
 // overflow
 
 .overflow-xs-auto {
@@ -186,4 +206,14 @@ $box-shadow-primary: 0 2px 16px rgba(32, 108, 164, 0.16);
 
 .shadow-primary {
   box-shadow: $box-shadow-primary;
+}
+
+//text color
+
+.text-color-gray {
+  color: $grey-light;
+}
+
+.text-color-blue-navy {
+  color: $blue-navy;
 }

@@ -1,13 +1,18 @@
 // headings
 
 @mixin h1 {
-  font-size: 4.5rem; //42px
-  line-height: 5rem; //50.4
+  font-size: 22px;
+  line-height: 23px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 2.63rem;
+    line-height: 3.15rem;
+  }
 }
 
 @mixin h2 {
-  font-size: 3.5rem; //32
-  line-height: 4rem; //38
+  font-size: 2rem; //32
+  line-height: 2.38rem; //38
 }
 
 @mixin h3 {
@@ -70,4 +75,8 @@
 
 @mixin ff-open-sans {
   font-family: "Open Sans", $font-family-sans-serif, sans-serif;
+}
+
+@mixin ff-epilogue {
+  font-family: "Epilogue", $font-family-sans-serif, sans-serif;
 }

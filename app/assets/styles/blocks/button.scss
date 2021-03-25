@@ -5,53 +5,53 @@
 $success-shadow: 0px 5px 10px rgba(76, 174, 80, 0.3);
 
 $button-sm-padding-x: (
-  xs: 22px,
-  sm: 23px,
-  md: 25px,
-  lg: 26px,
-  xl: 26px
+        xs: 22px,
+        sm: 23px,
+        md: 25px,
+        lg: 26px,
+        xl: 26px
 );
 
 $button-sm-padding-y: (
-  xs: 6px,
-  sm: 5px,
-  md: 5px,
-  lg: 7px,
-  xl: 8px
+        xs: 6px,
+        sm: 5px,
+        md: 5px,
+        lg: 7px,
+        xl: 8px
 );
 
 // normal
 
 $button-normal-padding-x: (
-  xs: 28px,
-  sm: 30px,
-  md: 30px,
-  lg: 35px,
-  xl: 40px
+        xs: 28px,
+        sm: 30px,
+        md: 30px,
+        lg: 35px,
+        xl: 40px
 );
 
 $button-normal-padding-y: (
-  xs: 8px,
-  sm: 8px,
-  md: 7px,
-  lg: 10px,
-  xl: 10px
+        xs: 8px,
+        sm: 8px,
+        md: 7px,
+        lg: 10px,
+        xl: 10px
 );
 
 $button-lg-padding-x: (
-  xs: 40px,
-  sm: 45px,
-  md: 48px,
-  lg: 49px,
-  xl: 56px
+        xs: 40px,
+        sm: 45px,
+        md: 48px,
+        lg: 49px,
+        xl: 56px
 );
 
 $button-lg-padding-y: (
-  xs: 12px,
-  sm: 13px,
-  md: 13px,
-  lg: 13px,
-  xl: 14px
+        xs: 12px,
+        sm: 13px,
+        md: 13px,
+        lg: 13px,
+        xl: 14px
 );
 
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -95,8 +95,13 @@ $button-lg-padding-y: (
 
   &--lg {
     @include button-p1;
+    width: 100%;
     padding: 16.5px 20px;
     font-weight: bold;
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
   }
 
   // color sets: normal

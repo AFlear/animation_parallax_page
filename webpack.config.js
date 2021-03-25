@@ -65,6 +65,10 @@ module.exports = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
             },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                type: "asset/resource"
+            },
         ]
     },
 
@@ -79,6 +83,10 @@ module.exports = {
         }),
         new StylelintPlugin({
             configFile: './.stylelintrc'
-        })
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
     ]
 };

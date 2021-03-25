@@ -11,8 +11,8 @@
 <body class="d-flex flex-column h-100">
 <header class="header d-flex align-items-center shadow-primary">
     <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <div class="d-flex align-items-center mb-2 mb-lg-0 logo">
+        <div class="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start">
+            <div class="d-flex align-items-center logo">
                 <a href="/" title="product">
                   <span class="logo__icon sprites sprites--logo">
                     <svg width="116" height="45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,7 @@
                 </a>
             </div>
 
-            <div class="d-flex col-12 col-lg-auto justify-content-center ms-lg-auto">
+            <div class="d-none d-lg-flex col-12 col-lg-auto justify-content-center ms-lg-auto">
 
                 <a href="#" class="link link--decoration-none link--svg mr--flexible-30" title="Search">
                     <svg width="24" height="25" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-flex">
+            <div class="d-none d-lg-flex">
                 <a href="#" class="button button--sm button--violet mr--flexible-30" title="Download">
                     Download
                 </a>
@@ -93,7 +93,46 @@
     </div>
 </header>
 
-<main class="main flex-grow-1 page-index ">
+<main class="main flex-grow-1 page-index">
+    <section class="">
+        <div class="container">
+            <div class="row position-relative my--flexible-105">
+                <div class="col-12 col-lg-6 mt-lg-5 pt-lg-5"
+                     data-animated="animate__fade-in" data-viewport-offset-bottom="150">
+                    <h1 class="h1 h1 mb-3 pb-1 text-color-blue-navy">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus
+                    </h1>
+
+                    <p class="p1 text-color-gray">
+                        Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
+                        quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et
+                        voluptates repudiandae sint et molestiae non recusandae.
+                    </p>
+
+                    <a href="#" class="button button--lg button--violet mt-2" title="Try for free ">
+                        Try for free
+                    </a>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="">
+                        <div class="js-parallax">
+                            <div data-depth="0.2" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" class="bg__figure bg__figure--dots"></div>
+
+                            <div data-depth="0.8" class="bg__figure bg__figure--blot"></div>
+
+                            <div data-depth="0.6" class="bg__figure bg__figure--picure">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
 
 </main>
 
