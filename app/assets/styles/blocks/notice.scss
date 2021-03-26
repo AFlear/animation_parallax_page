@@ -1,0 +1,51 @@
+.notice {
+  display: block;
+  padding: 29px 19px 32px 28px;
+  width: 100%;
+  background-color: $white;
+  border-radius: 8px;
+
+  @include media-breakpoint-up(md) {
+    max-width: 380px;
+    padding: 29px 28px 19px;
+  }
+
+  &__position {
+    position: relative;
+
+    &--custom {
+      top: 160px;
+
+      @include media-breakpoint-up(md) {
+        top: -35px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        top: 160px;
+      }
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  &__icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: $pink-light;
+  }
+
+  &__title {
+    @include ff-epilogue;
+    color: $blue-navy;
+    font-size: 18px;
+    line-height: 18.45px;
+    font-weight: 700;
+  }
+}

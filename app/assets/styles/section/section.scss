@@ -1,0 +1,30 @@
+.section {
+  &--first {
+    .bg__figure--dots {
+      top: 22px !important;
+      left: -55px !important;
+    }
+
+    .bg__figure--blot {
+      top: 10px !important;
+      left: 75px !important;
+    }
+  }
+
+  &--second {
+    .bg__figure--dots {
+      top: 250px !important;
+      left: -205px !important;
+    }
+
+    .bg__figure--blot {
+      top: 50px !important;
+      left: -135px !important;
+    }
+
+    .bg__figure--watch {
+      top: -35px !important;
+      left: -155px !important;
+    }
+  }
+}
