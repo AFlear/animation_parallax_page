@@ -1,41 +1,35 @@
-// default
-// sass-lint:disable no-descending-specificity
+.list {
+  &--number {
+    padding-top: 20px;
+    list-style: decimal;
 
-ul,
-ol {
-  @include p1-mb;
-  padding: 0 0 0 5rem;
+    &__item {
+      position: relative;
+      padding: 0 0 20px;
 
-  li {
-    margin-bottom: 1rem;
-  }
-}
+      a {
+        color: $grey-light;
+        font-weight: normal;
+        text-decoration: underline;
+      }
 
-// custom
+      @include media-breakpoint-up(md) {
+        padding: 0 0 0 16px;
+      }
 
-.ul,
-.ol {
-  padding-left: 4.5rem;
+      @include media-breakpoint-up(lg) {
+        padding: 0 0 0 10px;
+      }
 
-  @include media-breakpoint-only(sm) {
-    padding-left: 7rem;
-  }
+      @include media-breakpoint-up(xl) {
+        padding: 0 0 0 18px;
+      }
 
-  @include media-breakpoint-only(md) {
-    padding-left: 7.5rem;
-  }
-
-  @include media-breakpoint-only(lg) {
-    padding-left: 6rem;
-  }
-
-  @include media-breakpoint-up(xl) {
-    padding-left: 6.5rem;
-  }
-
-  li {
-    &:last-child {
-      margin-bottom: 0;
+      &::marker {
+        font-weight: bold;
+        margin-right: 5px;
+        color: $violet-primary;
+      }
     }
   }
 }

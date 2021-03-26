@@ -239,100 +239,182 @@
             </div>
         </div>
         <div class="slider-container">
+            <div class="main-slider__dots"></div>
+
             <div class="main-slider js-init"
                  data-slick='{"autoplay":false}'
                  data-preset="main">
                 <div class="main-slider__slide">
-                    <div class="slide-body">
-
-                        <div class="slide-body__title text-color-blue-navy">
-                            <div class="h3">
+                    <div class="slide-body container">
+                        <div class="slide-body__title">
+                            <div class="h3 text-color-blue-navy">
+                                Step 1
+                            </div>
+                            <div class="h2 text-color-blue-navy">
+                                Schritt 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-slider__slide">
+                    <div class="slide-body container">
+                        <div class="slide-body__title">
+                            <div class="h3 text-color-blue-navy">
+                                Step 2
+                            </div>
+                            <div class="h2 text-color-blue-navy">
+                                Schritt 2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-slider__slide">
+                    <div class="slide-body container">
+                        <div class="slide-body__title">
+                            <div class="h3 text-color-blue-navy">
                                 Step 3
                             </div>
-                            <div class="h2">
+                            <div class="h2 text-color-blue-navy">
                                 Sed ut perspiciatis
-                            </div
+                            </div>
                         </div>
-                        <div>
-                            <div class="d-flex align-items-start">
-                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-lg-4">
+                                <div class="nav flex-column nav-pills tabs" id="v-pills-tab" role="tablist"
                                      aria-orientation="vertical">
-                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                    <button class="tabs__item active" id="v-pills-home-tab" data-bs-toggle="pill"
                                             data-bs-target="#v-pills-home" type="button" role="tab"
                                             aria-controls="v-pills-home" aria-selected="true">
-                                        <span></span>
-                                        Nemo enim
+                                        <div class="tabs__item--marker"></div>
+                                        <span class="tabs__item--name">
+                                            Nemo enim
+                                        </span>
                                     </button>
-                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                    <button class="tabs__item" id="v-pills-profile-tab" data-bs-toggle="pill"
                                             data-bs-target="#v-pills-profile" type="button" role="tab"
                                             aria-controls="v-pills-profile" aria-selected="false">
-                                        <span></span>
-                                        Die ipsam voluptatem
+                                        <div class="tabs__item--marker"></div>
+                                        <span class="tabs__item--name">
+                                            Die ipsam voluptatem
+                                        </span>
                                     </button>
-                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                    <button class="tabs__item" id="v-pills-messages-tab" data-bs-toggle="pill"
                                             data-bs-target="#v-pills-messages" type="button" role="tab"
                                             aria-controls="v-pills-messages" aria-selected="false">
-                                        <span></span>
-                                        Ut enim ad minima
+                                        <div class="tabs__item--marker"></div>
+                                        <span class="tabs__item--name">
+                                            Ut enim ad minima
+                                        </span>
                                     </button>
-                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                    <button class="tabs__item" id="v-pills-settings-tab" data-bs-toggle="pill"
                                             data-bs-target="#v-pills-settings" type="button" role="tab"
                                             aria-controls="v-pills-settings" aria-selected="false">
-                                        <span></span>
-                                        Quis autem vel
+                                        <div class="tabs__item--marker"></div>
+                                        <span class="tabs__item--name">
+                                            Quis autem vel
+                                        </span>
                                     </button>
-                                    <button class="nav-link" id="v-pills-set-tab" data-bs-toggle="pill"
+                                    <button class="tabs__item" id="v-pills-set-tab" data-bs-toggle="pill"
                                             data-bs-target="#v-pills-set" type="button" role="tab"
                                             aria-controls="v-pills-set" aria-selected="false">
-                                        <span></span>
-                                        Sed ut perspiciatis
+                                        <div class="tabs__item--marker"></div>
+                                        <span class="tabs__item--name">
+                                            Sed ut perspiciatis
+                                        </span>
                                     </button>
                                 </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
                                 <div class="tab-content" id="v-pills-tabContent">
                                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                          aria-labelledby="v-pills-home-tab">
                                         <p>Nemo enim ipsam voluptatem, quia voluptas sit</p>
-                                        <ul>
-                                            <li>
+                                        <ol class="list list--number">
+                                            <li class="list--number__item">
                                                 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
                                             </li>
-                                            <li>Doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</li>
-                                            <li> Fet enim ad minima veniam, quis nostrum exercitationem ullam corporis</li>
-                                        </ul>
-                                        <p><span class="text-color-primary">
-                                            Notice:
-                                        </span> <br>
-                                            Dolorem ipsum, quia dolor sit amet consectetu</p>
+                                            <li class="list--number__item">Doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</li>
+                                            <li class="list--number__item"> Fet enim ad minima veniam, quis nostrum exercitationem ullam corporis</li>
+                                        </ol>
+                                        <p>
+                                            <span class="text-color-primary fw-bold">Notice:</span>
+                                            <br>
+                                            Dolorem ipsum, quia dolor sit amet consectetu
+                                        </p>
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                         aria-labelledby="v-pills-profile-tab">.332323.
+                                         aria-labelledby="v-pills-profile-tab">
+                                        <p>
+                                            <span class="text-color-primary fw-bold">Notice:</span>
+                                            <br>
+                                            Dolorem ipsum
+                                        </p>
+                                        <ol class="list list--number">
+                                            <li class="list--number__item">Doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</li>
+                                            <li class="list--number__item"> Fet enim ad minima veniam, quis nostrum exercitationem ullam corporis</li>
+                                        </ol>
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                                         aria-labelledby="v-pills-messages-tab">.232323.
+                                         aria-labelledby="v-pills-messages-tab">
+                                        <p>Nemo enim ipsam voluptatem, quia voluptas sit</p>
+                                        <ol class="list list--number">
+                                            <li class="list--number__item">
+                                                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                            </li>
+                                        </ol>
+                                        <p>
+                                            <span class="text-color-primary fw-bold">Notice:</span>
+                                            <br>
+                                            Dolorem ipsum, quia dolor sit amet consectetu.
+                                        </p>
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                         aria-labelledby="v-pills-settings-tab">.3123213.
+                                         aria-labelledby="v-pills-settings-tab">
+                                        <p>Nemo enim ipsam voluptatem, quia voluptas sit</p>
+                                        <ol class="list list--number">
+                                            <li class="list--number__item">
+                                                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                            </li>
+                                            <li class="list--number__item">Doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</li>
+                                            <li class="list--number__item">Fet enim ad minima veniam, quis nostrum exercitationem ullam corporis</li>
+                                            <li class="list--number__item">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</li>
+                                            <li class="list--number__item">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet</li>
+                                        </ol>
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-set" role="tabpanel"
-                                         aria-labelledby="v-pills-set-tab">.3123213.
+                                         aria-labelledby="v-pills-set-tab">
+                                        <p>Nemo enim ipsam voluptatem, quia voluptas sit</p>
+                                        <ol class="list list--number">
+                                            <li class="list--number__item">
+                                                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+                                            </li>
+                                            <li class="list--number__item">Doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore</li>
+                                            <li class="list--number__item"> Fet enim ad minima veniam, quis nostrum exercitationem ullam corporis</li>
+                                        </ol>
+                                        <p>
+                                            <span class="text-color-primary fw-bold">Notice:</span>
+                                            <br>
+                                            Dolorem ipsum, quia dolor sit amet consectetu
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="main-slider__slide">
-                    <div class="slide-body ">
-                        <div class="slide-body__title">Ваш сайт<br> будет лучшим</div>
-                        <div class="slide-body__text">Мы не просто создаем сайты, мы разрабатываем и продвигаем
-                            <i>комплексные веб-проекты,</i> которые решают ваши бизнес задачи!
+                    <div class="slide-body container">
+                        <div class="slide-body__title">
+                            <div class="h3 text-color-blue-navy">
+                                Step 4
+                            </div>
+                            <div class="h2 text-color-blue-navy">
+                                Schritt 4
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main-slider__dots"></div>
-
         </div>
     </section>
 

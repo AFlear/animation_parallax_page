@@ -14,18 +14,15 @@ function Parallaxy() {
 if ($(window).width() > 1200) {
     Parallaxy();
 }
-var tabEl = document.querySelector('button[data-bs-toggle="tab"]')
-tabEl.addEventListener('shown.bs.tab', function (event) {
-    event.target // newly activated tab
-    event.relatedTarget // previous active tab
-})
+
 
 $('.js-init[data-slick]').each((i, sliderNode) => {
     let $slider = $(sliderNode);
     let presets = {
         'main': {
             dots: true,
-            fade: true,
+            fade: false,
+            initialSlide: 1,
             appendDots: '.main-slider__dots'
         },
         'text-reviews': {
@@ -47,7 +44,7 @@ $('.js-init[data-slick]').each((i, sliderNode) => {
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        mobileFirst: true
+        mobileFirst: false
     }, preset));
 });
 

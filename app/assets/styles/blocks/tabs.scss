@@ -1,0 +1,75 @@
+.tabs {
+  $this: &;
+  padding: 20px 0;
+
+  &__item {
+    @include ff-epilogue;
+    font-size: 14px;
+    line-height: 21px;
+    border: 0;
+    text-align: start;
+    color: $grey-light;
+    background: transparent;
+    font-weight: normal;
+
+    &:not(:last-child) {
+      padding-bottom: 30px;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 22px;
+      line-height: 22.55px;
+    }
+
+    &--marker {
+      display: none;
+      position: relative;
+
+      @include media-breakpoint-up(lg) {
+        display: inline;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 20px;
+        height: 1px;
+        content: '';
+        transition: 0.2s ease-in-out;
+        background-color: $grey-light;
+      }
+    }
+
+    &--name {
+      padding-left: 50px;
+    }
+
+    &.active {
+      font-size: 18px;
+      line-height: 27px;
+      color: $violet-primary;
+
+      @include media-breakpoint-up(md) {
+        font-size: 22px;
+        line-height: 22.55px;
+        font-weight: bold;
+      }
+
+      #{$this}__item--marker {
+        &::after {
+          width: 40px;
+          height: 2px;
+          background-color: $violet-primary;
+        }
+      }
+    }
+  }
+}
