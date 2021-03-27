@@ -17,6 +17,21 @@
         margin: auto;
       }
 
+      &_xs {
+        width: 173.28px;
+        height: 95.17px;
+
+        @include media-breakpoint-up(sm) {
+          width: 261.07px;
+          height: 143.39px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 335px;
+          height: 184px;
+        }
+      }
+
       &_s {
         width: 171.93px;
         height: 94.32px;
@@ -81,6 +96,21 @@
         @include media-breakpoint-up(lg) {
           width: 362px;
           height: 388px;
+        }
+      }
+
+      &_xm {
+        width: 275px;
+        height: 295px;
+
+        @include media-breakpoint-up(sm) {
+          width: 415px;
+          height: 445px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 467px;
+          height: 500px;
         }
       }
 
@@ -171,6 +201,26 @@
       @include media-breakpoint-up(lg) {
         width: 521px;
         height: 391px;
+        background-size: auto;
+      }
+    }
+
+    &--headphones {
+      width: 340px;
+      height: 255px;
+      top: -22px;
+      right: -90px;
+      background-image: url("../images/png/headphones.png");
+      z-index: 3;
+
+      @include media-breakpoint-up(sm) {
+        width: 486px;
+        height: 365px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 526px;
+        height: 395px;
         background-size: auto;
       }
     }

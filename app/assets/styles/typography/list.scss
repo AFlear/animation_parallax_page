@@ -1,7 +1,8 @@
 .list {
+  padding: 4px 3px 0 0;
+  list-style: none;
+
   &--number {
-    padding: 4px 3px 0 0;
-    list-style: none;
     counter-reset: li;
 
     &__item {
@@ -24,36 +25,26 @@
       }
     }
   }
+
+  &--circle {
+    &__item {
+      @include p1;
+      position: relative;
+      padding: 0 0 21px 29px;
+      color: $grey-light;
+
+      &::before {
+        position: absolute;
+        background-color: $blue-navy;
+        top: 10px;
+        left: -1px;
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        border-radius: 50%;
+        color: $violet-primary;
+        content: '';
+      }
+    }
+  }
 }
-
-// custom UL
-
-//.ul {
-//  list-style-type: none;
-//
-//  li {
-//    list-style-type: none;
-//  }
-//
-//  &--dash {
-//    li {
-//      clear: both;
-//
-//      &:before {
-//        width: 2.5rem;
-//        margin: 0 0 0 -2.5rem;
-//        float: left;
-//        color: $yellow-dark;
-//        font-size: 80%;
-//        font-weight: bold;
-//        content: "—";
-//      }
-//
-//      &:after {
-//        display: block;
-//        clear: both;
-//        content: "";
-//      }
-//    }
-//  }
-//}
