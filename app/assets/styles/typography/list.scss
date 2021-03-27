@@ -1,34 +1,26 @@
 .list {
   &--number {
-    padding-top: 20px;
-    list-style: decimal;
+    padding: 4px 3px 0 0;
+    list-style: none;
+    counter-reset: li;
 
     &__item {
       position: relative;
-      padding: 0 0 20px;
+      list-style-type: none;
+      padding: 0 0 23px;
+      font-size: 16px;
+      line-height: 22px;
+      color: $grey-light;
 
-      a {
-        color: $grey-light;
-        font-weight: normal;
-        text-decoration: underline;
+      &:last-child {
+        padding: 0;
       }
 
-      @include media-breakpoint-up(md) {
-        padding: 0 0 0 16px;
-      }
-
-      @include media-breakpoint-up(lg) {
-        padding: 0 0 0 10px;
-      }
-
-      @include media-breakpoint-up(xl) {
-        padding: 0 0 0 18px;
-      }
-
-      &::marker {
-        font-weight: bold;
-        margin-right: 5px;
+      &::before {
         color: $violet-primary;
+        font-weight: bold;
+        content: counter(li) ".";
+        counter-increment: li;
       }
     }
   }

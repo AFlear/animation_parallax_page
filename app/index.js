@@ -22,7 +22,11 @@ $('.js-init[data-slick]').each((i, sliderNode) => {
         'main': {
             dots: true,
             fade: false,
-            initialSlide: 1,
+            customPaging: function(slider, i) {
+                console.log(slider, i)
+                return '<div class="dots__item"><div class="dots__item--number">' + ($(slider.$slides[i]).data('slick-index') + 1)  + '</div>' +
+                    '<p class="p2">Step' + ($(slider.$slides[i]).data('slick-index') + 1) + '</p></div>';
+            },
             appendDots: '.main-slider__dots'
         },
         'text-reviews': {
@@ -44,7 +48,7 @@ $('.js-init[data-slick]').each((i, sliderNode) => {
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        mobileFirst: false
+        customPaging: true
     }, preset));
 });
 

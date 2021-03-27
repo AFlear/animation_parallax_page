@@ -31,4 +31,22 @@
   &--steps {
     display: block;
   }
+
+  &--payment {
+    .bg__figure--dots {
+      top: 35px !important;
+      left: 62px !important;
+    }
+
+    .bg__figure--blot {
+      top: 40px !important;
+      left: 60px !important;
+      transform: rotate(-115deg) !important;
+    }
+
+    .bg__figure--card-reader {
+      top: 35px !important;
+      left: -65px !important;
+    }
+  }
 }

@@ -32,6 +32,21 @@
         }
       }
 
+      &_m {
+        width: 235.86px;
+        height: 129.31px;
+
+        @include media-breakpoint-up(sm) {
+          width: 345px;
+          height: 189px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 456px;
+          height: 250px;
+        }
+      }
+
       &_l {
         width: 153.88px;
         height: 84.36px;
@@ -53,6 +68,21 @@
       right: -85px;
       background-image: url("../images/svg/bg-figure.svg");
       z-index: 1;
+
+      &_s {
+        width: 187px;
+        height: 200px;
+
+        @include media-breakpoint-up(sm) {
+          width: 355px;
+          height: 381px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 362px;
+          height: 388px;
+        }
+      }
 
       &_m {
         width: 254px;
@@ -121,6 +151,26 @@
       @include media-breakpoint-up(lg) {
         width: 682px;
         height: 646px;
+        background-size: auto;
+      }
+    }
+
+    &--card-reader {
+      width: 256px;
+      height: 192px;
+      top: -22px;
+      right: -90px;
+      background-image: url("../images/png/card-reader.png");
+      z-index: 3;
+
+      @include media-breakpoint-up(sm) {
+        width: 521px;
+        height: 391px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 521px;
+        height: 391px;
         background-size: auto;
       }
     }
