@@ -169,10 +169,26 @@
   }
 }
 
+.mt--flexible-105 {
+  margin-top: 25px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 55px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 75px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 105px;
+  }
+}
+
 // padding
 .py--flexible-105 {
   padding-top: 25px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 
   @include media-breakpoint-up(md) {
     padding-top: 55px;
@@ -187,6 +203,22 @@
   @include media-breakpoint-up(xl) {
     padding-top: 105px;
     padding-bottom: 105px;
+  }
+}
+
+.pt--flexible-105 {
+  padding-top: 25px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 55px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 75px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 105px;
   }
 }
 

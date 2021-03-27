@@ -30,6 +30,16 @@
   line-height: 22.5px;
 }
 
+@mixin h4-lh {
+  font-size: 18px;
+  line-height: 18px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
 // paragraphs
 // paragraph-middle
 @mixin p1 {

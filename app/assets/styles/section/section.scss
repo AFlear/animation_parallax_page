@@ -66,4 +66,36 @@
       left: 20px !important;
     }
   }
+
+  &--folder {
+    .bg__figure--dots {
+      top: 288px !important;
+      left: -135px !important;
+      z-index: 5;
+    }
+
+    .bg__figure--blot {
+      &:not(.bg__figure--blot--repeating) {
+        top: -45px !important;
+        left: 130px !important;
+      }
+    }
+
+    .bg__figure--blot--bg-static {
+      top: -58px;
+      opacity: 0.5;
+      left: 30px;
+      transform: matrix(0, -1, 1, 0, 0, 0) rotate(268deg);
+    }
+
+    .bg__figure--folder {
+      top: -50px !important;
+      left: 5px !important;
+    }
+  }
+
+  &--faq {
+    padding-top: 60px;
+    margin-bottom: 100px;
+  }
 }

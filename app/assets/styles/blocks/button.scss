@@ -114,6 +114,11 @@ $button-lg-padding-y: (
     }
   }
 
+  &--static-size {
+    @include button-p1;
+    padding: 17px 30px;
+  }
+
   // color sets: normal
 
   &--violet {

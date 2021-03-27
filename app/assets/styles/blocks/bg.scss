@@ -17,6 +17,21 @@
         margin: auto;
       }
 
+      &_xxs {
+        width: 208px;
+        height: 114px;
+
+        @include media-breakpoint-up(sm) {
+          width: 206.94px;
+          height: 113.43px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 270px;
+          height: 148px;
+        }
+      }
+
       &_xs {
         width: 173.28px;
         height: 95.17px;
@@ -79,12 +94,10 @@
     }
 
     &--blot {
-      top: -10px;
-      right: -85px;
       background-image: url("../images/svg/bg-figure.svg");
       z-index: 1;
 
-      &_s {
+      &_xs {
         width: 187px;
         height: 200px;
 
@@ -96,6 +109,16 @@
         @include media-breakpoint-up(lg) {
           width: 362px;
           height: 388px;
+        }
+      }
+
+      &_s {
+        width: 300px;
+        height: 221px;
+
+        @include media-breakpoint-up(lg) {
+          width: 432px;
+          height: 317px;
         }
       }
 
@@ -221,6 +244,26 @@
       @include media-breakpoint-up(lg) {
         width: 526px;
         height: 395px;
+        background-size: auto;
+      }
+    }
+
+    &--folder {
+      width: 283px;
+      height: 204px;
+      top: -22px;
+      right: -90px;
+      background-image: url("../images/png/folder.png");
+      z-index: 3;
+
+      @include media-breakpoint-up(sm) {
+        width: 454px;
+        height: 340px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 553px;
+        height: 415px;
         background-size: auto;
       }
     }

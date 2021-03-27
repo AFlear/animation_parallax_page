@@ -1,0 +1,57 @@
+.accordion {
+  margin-top: 22px;
+
+  &-item {
+    max-width: 1044px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto 21px;
+    border: 0;
+  }
+
+  &-button {
+    @include h4-lh;
+    @include ff-open-sans;
+    font-weight: 700;
+    padding: 0;
+    color: $blue-navy;
+
+    &:focus,
+    &:hover {
+      box-shadow: none;
+    }
+
+    &::after {
+      position: absolute;
+      background-image: url("../images/svg/arrow.svg") !important;
+      transform: rotate(180deg);
+      right: 12px;
+    }
+
+    &:not(.collapsed) {
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+      color: $blue-navy;
+      padding: 0 0 10px;
+
+      @include media-breakpoint-up(sm) {
+        padding: 0 0 14px;
+      }
+
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &-body {
+    color: $grey-light;
+    padding: 10px 2px 0;
+    border-top: 1px solid $blue-transparent;
+
+    @include media-breakpoint-up(sm) {
+      padding: 12px 2px 0;
+    }
+  }
+}
