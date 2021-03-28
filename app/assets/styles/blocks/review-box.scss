@@ -1,31 +1,65 @@
 .review-box {
   $this: &;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 30px;
   border-radius: 8px;
+  min-width: 300px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: 380px;
+  }
 
   &__header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
     padding: 3px 0 15px;
   }
 
   &__icon {
-    width: 36px;
-    height: 36px;
     background: no-repeat center;
     background-size: contain;
 
+    &--user {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      background-image: url("../images/svg/user.svg");
+    }
+
     &--quote {
+      width: 46px;
+      height: 46px;
       background-image: url("../images/svg/quote.svg");
     }
   }
-  //&__body {}
+
+  &__body {
+    height: 320px;
+    padding-top: 23px;
+  }
+
   &__text {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 25.5px;
     font-style: italic;
     color: $grey-light;
   }
 
-  //&__footer {}
+  &__footer {
+    &--top {
+      display: flex;
+      align-items: center;
+      color: $grey-light;
+      margin-bottom: 10px;
+    }
+
+    &--bottom {
+      color: $grey-light;
+    }
+  }
 }

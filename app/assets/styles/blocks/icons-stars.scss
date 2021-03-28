@@ -43,4 +43,16 @@ $icon-star-spacer-sm: 4px;
   &--white-half {
     background-position: 0 sprite-percent-y($sprite-height-stars, 240, 38);
   }
+
+  &--violet {
+    background-position: 0 sprite-percent-y($sprite-height-stars, 48, 38);
+  }
+
+  &--violet-empty {
+    background-position: 0 sprite-percent-y($sprite-height-stars, 336, 38);
+  }
+
+  &--violet-half {
+    background-position: 0 sprite-percent-y($sprite-height-stars, 144, 38);
+  }
 }

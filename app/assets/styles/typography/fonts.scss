@@ -14,6 +14,18 @@ $fonts-directory: "../fonts";
 
 @font-face {
   font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Open Sans"),
+    local("OpenSans"),
+    url("#{$fonts-directory}/open-sans-v18-latin-italic.woff2") format("woff2"),
+    url("#{$fonts-directory}/open-sans-v18-latin-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
