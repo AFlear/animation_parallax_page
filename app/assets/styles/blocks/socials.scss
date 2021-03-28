@@ -1,0 +1,40 @@
+.socials {
+  padding-bottom: 2rem;
+
+  &__item {
+    width: 36px;
+    height: 36px;
+    filter: grayscale(100%);
+    transition: 0.2s ease;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      filter: none;
+    }
+  }
+
+  &__icon {
+    background: no-repeat center;
+    background-size: contain;
+
+    &--facebook {
+      background-image: url("../images/svg/logos-facebook.svg");
+    }
+
+    &--instagram {
+      background-image: url("../images/svg/logos-instagram.svg");
+    }
+
+    &--pinterest {
+      background-image: url("../images/svg/logos-pinterest.svg");
+    }
+
+    &--youtube {
+      background-image: url("../images/svg/logos-youtube.svg");
+    }
+  }
+}

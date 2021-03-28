@@ -1,0 +1,46 @@
+$icon-star-spacer: 5px;
+$icon-star-spacer-sm: 4px;
+
+.icons-stars {
+  display: block;
+  width: 22px;
+  height: 22px;
+
+  &--content {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 47px;
+      margin-bottom: 47px;
+    }
+  }
+
+  // margins: normal
+
+  &--mr {
+    margin-right: $icon-star-spacer;
+  }
+
+  &--ml {
+    margin-left: $icon-star-spacer;
+  }
+
+  // margins: small
+
+  &--mr-small {
+    margin-right: $icon-star-spacer-sm;
+  }
+
+  &--white {
+    background-position: 0 sprite-percent-y($sprite-height-stars, 192, 38);
+  }
+
+  &--white-empty {
+    background-position: 0 sprite-percent-y($sprite-height-stars, 384, 38);
+  }
+
+  &--white-half {
+    background-position: 0 sprite-percent-y($sprite-height-stars, 240, 38);
+  }
+}

@@ -1,0 +1,34 @@
+// https://spritegen.website-performance.org/
+// padding between images: 5px
+
+// hint: all small icon sprites should be square
+
+// Find out the exact coordinates of your sprite:
+// http://www.spritecow.com
+
+// If you add a picture to a sprite,
+// then do not forget to change the width/height of the sprite
+
+$sprite-height-stars: 566;
+$sprite-height-review-logos: 544;
+$sprite-height-geotag: 234;
+
+@function sprite-percent-x($sprite-width, $image-x-position, $image-width) {
+  @return percentage($image-x-position / ($sprite-width - $image-width));
+}
+
+@function sprite-percent-y($sprite-height, $image-y-position, $image-height) {
+  @return percentage($image-y-position / ($sprite-height - $image-height));
+}
+
+//sass-lint:disable-block no-vendor-prefixes
+
+.sprites {
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+
+  &--stars {
+    background-image: url("../images/png/stars.png");
+  }
+}

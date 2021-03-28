@@ -1,0 +1,12 @@
+.security {
+  &__icon {
+    width: 141px;
+    height: 19px;
+    background: no-repeat center;
+    background-size: contain;
+
+    &--dmca {
+      background-image: url("../images/svg/dmca.svg");
+    }
+  }
+}

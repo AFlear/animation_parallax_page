@@ -1,3 +1,21 @@
 .footer {
-  display: block;
+  margin-top: 166px;
+  padding-top: 58px;
+  background-color: $black-bg;
+  color: $grey-normal;
+
+  &__link {
+    @include footer-text;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 2px 0 0;
+
+    & > li {
+      padding-bottom: 7px;
+    }
+  }
 }

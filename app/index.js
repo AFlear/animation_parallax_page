@@ -1,9 +1,10 @@
 import './assets/styles/theme.scss';
 import Parallax from 'parallax-js';
 import $ from 'jquery';
-import bootstrap from 'bootstrap';
+import 'bootstrap/dist/js/bootstrap.bundle';
 import 'slick-carousel';
-
+import './assets/js/select2';
+import Select2 from "./assets/js/select2";
 global.jQuery = $;
 global.$ = $;
 
@@ -15,6 +16,7 @@ if ($(window).width() > 1200) {
     Parallaxy();
 }
 
+Select2.init('.js-select2-flags', 'flags');
 
 $('.js-init[data-slick]').each((i, sliderNode) => {
     let $slider = $(sliderNode);
