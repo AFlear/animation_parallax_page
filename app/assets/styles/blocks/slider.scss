@@ -1,90 +1,66 @@
 /* stylelint-disable */
 
-.main-slider {
-  padding-top: 23px;
+$margin-between-slides: 1rem;
+
+.review--slider {
+  margin: 33px auto;
+
+  &__link {
+    @include ff-epilogue;
+    position: relative;
+    text-decoration: none;
+    color: $violet-primary;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 11px;
+
+    &:after {
+      position: absolute;
+      background: no-repeat center;
+      background-size: contain;
+      background-image: url("../images/svg/dotted.svg");
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      content: '';
+
+    }
+
+    &:hover {
+      color: $pink-light;
+    }
+  }
 }
 
-.dots {
-  $this: &;
+.slick-list {
+  margin: 0 -($margin-between-slides);
+}
 
-  ul {
-    position: relative;
+.slick-slide {
+  margin: 0 $margin-between-slides;
+  padding: calc(1rem - 4px) 0 calc(1rem + 4px);
+
+  & > div {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 74px;
-    margin-bottom: 60px;
+  }
+}
 
-
-    @include media-breakpoint-up(sm) {
-      height: 55px;
-      bottom: -20px;
-      max-width: 85%;
-      margin: 0 auto 54px;
-    }
-
-    @include media-breakpoint-up(lg) {
-      max-width: 100%;
-      height: 74px;
-      margin-bottom: 60px;
-    }
-    li {
-      width: 45px;
-      height: auto;
-      margin: 0;
-
-      &:not(:first-child) {
-        #{$this}__item--number {
-          margin-left: auto;
-
-          &::before {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            bottom: 0;
-            margin: auto;
-            width: 90px;
-            height: 2px;
-            border-radius: 40px;
-            background-color: $blue-light;
-            content: '';
-
-            @include media-breakpoint-up(md) {
-              right: 50px;
-              width: 125px;
-            }
-
-            @include media-breakpoint-up(lg) {
-              right: 47px;
-              width: 190px;
-            }
-          }
-        }
+.slick-dots {
+  bottom: -85px;
+  li  {
+    button {
+      &::before {
+        font-size: 15px;
+        opacity: 1;
+        color: $blue-light;
       }
     }
   }
+}
 
-  &__item {
-    text-align: center;
-    color: $blue-dark;
-
-    &--number {
-      @include ff-epilogue;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 25px;
-      border-radius: 50%;
-      background-color: $blue-light;
-    }
-
-    p {
-      margin-top: 10px;
-    }
-  }
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: $blue-normal;
 }

@@ -1,0 +1,171 @@
+/* stylelint-disable */
+
+$step-size: 50px;
+$border-color-disabled: #A8A8A8;
+$line-color-disabled: #DCDCDC;
+$disabled-color: #A8A8A8;
+
+$border-color-current: #3498db;
+$current-color: #3498db;
+
+$border-color-success: #2ecc71;
+$line-color-success: #2ecc71;
+$success-color: #2ecc71;
+
+.steps {
+  &__list {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    counter-reset: li;
+  }
+
+  &__item {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    color: $blue-dark;
+
+    p {
+      margin-top: 10px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      background-color: $blue-light;
+      width: 100%;
+      top: 25px;
+      left: 50%;
+      transition: background-color .2s ease;
+    }
+
+    &:last-child:after {
+      content: none;
+    }
+
+    &:before {
+      @include ff-epilogue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3.5px solid $white;
+      width: $step-size;
+      height: $step-size;
+      border-radius: ($step-size / 2) + 5px; // 5px fix right radius
+      position: relative;
+      font-size: 24px;
+      content: counter(li);
+      counter-increment: li;
+      background-color: $blue-light;
+      font-weight: 700;
+      line-height: 25px;
+      transition: border-color .2s ease;
+      z-index: 1;
+    }
+
+    // When in a step
+    &.current {
+      color: $violet-primary;
+    }
+
+    &.current:before {
+      background-color: $pink-light;
+      animation: content-animation .2s ease both;
+    }
+
+    // When a step has been successfully done
+    &.success {
+      color: $violet-primary;
+    }
+
+    &.success:before {
+      background-color: $pink-light;
+      animation: content-animation .2s ease both;
+    }
+
+    &.success:after {
+      background-color: $violet-primary;
+      animation: line-animation .2s ease both;
+    }
+  }
+
+  &--container {
+
+    &--center {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+  &__slides {
+    &--item {
+      width: 100%;
+      min-width: 100%;
+      display: block;
+
+      &:not(:first-child) {
+        display: none;
+        position: absolute;
+      }
+
+      .card-header {
+        background-color:  $blue-light;
+        border-bottom: none;
+        font-size: 1rem;
+        padding: 1rem 3rem;
+      }
+    }
+  }
+}
+
+.action-buttons {
+  position: absolute;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 1.2rem;
+
+  .bmd-btn-fab {
+    width: 2rem;
+    min-width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    background: transparent;
+  }
+}
+
+@keyframes content-animation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes line-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
