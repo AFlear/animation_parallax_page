@@ -1,0 +1,31 @@
+.review-box {
+  $this: &;
+  padding: 30px;
+  border-radius: 8px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0 15px;
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+    background: no-repeat center;
+    background-size: contain;
+
+    &--quote {
+      background-image: url("../images/svg/quote.svg");
+    }
+  }
+  //&__body {}
+  &__text {
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+    color: $grey-light;
+  }
+
+  //&__footer {}
+}

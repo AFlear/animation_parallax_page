@@ -1,6 +1,11 @@
 .tabs {
   $this: &;
+  flex-wrap: nowrap;
   padding: 20px 0;
+
+  @include media-breakpoint-up(lg) {
+    flex-wrap: wrap;
+  }
 
   &__item {
     @include ff-epilogue;
@@ -11,14 +16,12 @@
     color: $grey-light;
     background: transparent;
     font-weight: normal;
+    padding-right: 10px;
 
     &:not(:last-child) {
-      padding-bottom: 30px;
-    }
-
-    @include media-breakpoint-up(md) {
-      font-size: 16px;
-      line-height: 24px;
+      @include media-breakpoint-up(lg) {
+        padding-bottom: 30px;
+      }
     }
 
     @include media-breakpoint-up(lg) {
@@ -49,7 +52,9 @@
     }
 
     &--name {
-      padding-left: 50px;
+      @include media-breakpoint-up(lg) {
+        padding-left: 50px;
+      }
     }
 
     &.active {
@@ -57,7 +62,7 @@
       line-height: 27px;
       color: $violet-primary;
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         font-size: 22px;
         line-height: 22.55px;
         font-weight: bold;
@@ -74,7 +79,9 @@
   }
 
   &__content {
-    padding-top: 18px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 18px;
+    }
 
     p {
       font-size: 16px;

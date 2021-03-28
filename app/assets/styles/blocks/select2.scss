@@ -197,7 +197,7 @@
 
           &::after,
           &::before {
-            top: -2px;
+            top: 0;
             bottom: 0;
             margin: auto;
             pointer-events: none;
@@ -210,7 +210,7 @@
             content: "";
             position: absolute;
             right: 7px;
-            transform: rotate(45deg);
+            transform: rotate(-45deg);
             transition: 0.5s all ease;
             background: #7E8183;
           }
@@ -219,7 +219,7 @@
             content: "";
             position: absolute;
             left: 7px;
-            transform: rotate(-45deg);
+            transform: rotate(45deg);
             transition: 0.5s all ease;
             background: #7E8183;
           }

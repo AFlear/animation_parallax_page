@@ -1,6 +1,10 @@
 .list {
-  padding: 4px 3px 0 0;
+  padding: 6px 3px 0 0;
   list-style: none;
+
+  @include media-breakpoint-up(lg) {
+    padding: 4px 3px 0 0;
+  }
 
   &--number {
     counter-reset: li;

@@ -11,6 +11,11 @@
       background-image: url("../images/svg/dots.svg");
       z-index: 2;
 
+      @include media-breakpoint-up(sm) {
+        top: 35px;
+        left: 115px;
+      }
+
       &_center {
         top: 0;
         bottom: 0;
@@ -94,6 +99,11 @@
     }
 
     &--blot {
+      width: 100%;
+      height: 100%;
+      top: 35px;
+      left: 10px;
+      right: 0;
       background-image: url("../images/svg/bg-figure.svg");
       z-index: 1;
 
@@ -142,8 +152,11 @@
         height: 273px;
 
         @include media-breakpoint-up(sm) {
-          width: 420px;
-          height: 452px;
+          width: 450px;
+          height: 450px;
+          top: 10px;
+          left: -80px;
+          right: unset;
         }
 
         @include media-breakpoint-up(lg) {
@@ -153,13 +166,13 @@
       }
 
       &_l {
-        width: 213.27px;
-        height: 228.8px;
+        //width: 213.27px;
+        //height: 228.8px;
 
-        @include media-breakpoint-up(sm) {
-          width: 425.12px;
-          height: 456.07px;
-        }
+        //@include media-breakpoint-up(sm) {
+        //  width: 425.12px;
+        //  height: 456.07px;
+        //}
 
         @include media-breakpoint-up(lg) {
           width: 632px;
@@ -171,8 +184,9 @@
     &--mac {
       width: 300px;
       height: 225.08px;
-      top: -22px;
-      right: -90px;
+      top: 0;
+      left: 0;
+      right: 0;
       background-image: url("../images/png/imac.png");
       z-index: 3;
 
@@ -185,6 +199,8 @@
         width: 682px;
         height: 646px;
         background-size: auto;
+        top: -22px;
+        right: -90px;
       }
     }
 
@@ -197,8 +213,10 @@
       z-index: 3;
 
       @include media-breakpoint-up(sm) {
-        width: 598px;
-        height: 448.67px;
+        width: 100%;
+        height: 485px;
+        top: -15px;
+        left: -355px;
       }
 
       @include media-breakpoint-up(lg) {

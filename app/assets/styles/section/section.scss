@@ -1,73 +1,183 @@
 .section {
+  $this: &;
+
   &--first {
+    padding-top: 105px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 85px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 105px;
+    }
+
     .bg__figure--dots {
-      top: 22px !important;
-      left: -55px !important;
+      @include media-breakpoint-up(lg) {
+        top: 22px !important;
+        left: -55px !important;
+      }
     }
 
     .bg__figure--blot {
-      top: 10px !important;
-      left: 75px !important;
+      @include media-breakpoint-up(lg) {
+        top: 10px !important;
+        left: 75px !important;
+      }
     }
   }
 
   &--second {
+    padding: 133px 0;
+
+    @include media-breakpoint-up(md) {
+      padding: 75px 0;
+    }
+
+    @include media-breakpoint-only(md) {
+      .section--parallax {
+        padding-top: 160px;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 133px 0;
+    }
+
     .bg__figure--dots {
-      top: 250px !important;
-      left: -205px !important;
+      //top: 250px !important;
+      //left: -205px !important;
+      top: 170px !important;
+      left: -30px !important;
+      right: unset;
+      bottom: unset;
     }
 
     .bg__figure--blot {
-      top: 50px !important;
-      left: -135px !important;
+      @include media-breakpoint-up(lg) {
+        top: 40px !important;
+        left: -40px !important;
+      }
     }
 
     .bg__figure--watch {
-      top: -35px !important;
-      left: -155px !important;
+      @include media-breakpoint-up(lg) {
+        top: -35px !important;
+        left: -155px !important;
+      }
     }
   }
 
   &--steps {
-    display: block;
+    padding-top: 95px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 36px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 95px;
+    }
+  }
+
+  &--calculator {
+    padding: 65px 0 35px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 138px 0 35px;
+    }
+  }
+
+  &--reviews {
+    padding: 45px 0;
+
+    @include media-breakpoint-up(lg) {
+      padding: 95px 0;
+    }
   }
 
   &--payment {
     .bg__figure--dots {
-      top: 35px !important;
-      left: 62px !important;
+      top: 95px;
+      left: 113px;
+
+      @include media-breakpoint-up(lg) {
+        top: 35px !important;
+        left: 62px !important;
+      }
     }
 
     .bg__figure--blot {
-      top: 40px !important;
-      left: 60px !important;
+      top: 40px;
+      left: 5px;
       transform: rotate(-115deg) !important;
+
+      @include media-breakpoint-up(lg) {
+        top: 40px !important;
+        left: 60px !important;
+      }
     }
 
     .bg__figure--card-reader {
-      top: 35px !important;
-      left: -65px !important;
+      top: 5px;
+      left: -35px;
+      right: 0;
+
+      @include media-breakpoint-up(lg) {
+        top: 35px !important;
+        left: -65px !important;
+      }
+    }
+
+    #{$this}__parallax {
+      @include media-breakpoint-only(md) {
+        padding-top: 50%;
+      }
     }
   }
 
   &--list {
+    @include media-breakpoint-up(lg) {
+      padding-top: 105px;
+    }
+
     .bg__figure--dots {
-      top: 235px !important;
-      left: -50px !important;
+      top: unset;
+      left: 150px;
+      bottom: 50px;
+
+      @include media-breakpoint-up(lg) {
+        top: 235px !important;
+        left: -50px !important;
+      }
     }
 
     .bg__figure--blot {
-      top: -30px !important;
-      left: 82px !important;
+      top: -40px;
+      left: 0;
+
+      @include media-breakpoint-up(lg) {
+        top: -30px !important;
+        left: 82px !important;
+      }
     }
 
     .bg__figure--headphones {
-      top: -15px !important;
-      left: 20px !important;
+      top: -20px;
+      left: -50px;
+
+      @include media-breakpoint-up(lg) {
+        top: -15px !important;
+        left: 20px !important;
+      }
     }
   }
 
   &--folder {
+    @include media-breakpoint-up(lg) {
+      padding-top: 105px;
+    }
+
     .bg__figure--dots {
       top: 288px !important;
       left: -135px !important;
@@ -97,5 +207,16 @@
   &--faq {
     padding-top: 60px;
     margin-bottom: 100px;
+  }
+
+  &__parallax {
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    margin-top: 15px;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+    }
   }
 }
