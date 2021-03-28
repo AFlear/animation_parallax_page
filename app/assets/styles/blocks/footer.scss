@@ -1,8 +1,13 @@
 .footer {
-  margin-top: 166px;
-  padding-top: 58px;
+  margin-top: 103px;
+  padding-top: 50px;
   background-color: $black-bg;
   color: $grey-normal;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 58px;
+    margin-top: 166px;
+  }
 
   &__link {
     @include footer-text;

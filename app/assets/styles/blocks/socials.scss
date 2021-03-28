@@ -20,6 +20,11 @@
   &__icon {
     background: no-repeat center;
     background-size: contain;
+    margin-top: 5px;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
 
     &--facebook {
       background-image: url("../images/svg/logos-facebook.svg");

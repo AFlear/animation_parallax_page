@@ -179,34 +179,57 @@
     }
 
     .bg__figure--dots {
-      top: 288px !important;
-      left: -135px !important;
+      top: unset;
+      bottom: 5px;
       z-index: 5;
+
+      @include media-breakpoint-up(lg) {
+        top: 288px !important;
+        left: -135px !important;
+      }
     }
 
     .bg__figure--blot {
       &:not(.bg__figure--blot--repeating) {
-        top: -45px !important;
-        left: 130px !important;
+        top: -15px;
+
+        @include media-breakpoint-up(lg) {
+          top: -45px !important;
+          left: 130px !important;
+        }
       }
     }
 
     .bg__figure--blot--bg-static {
-      top: -58px;
+      top: -85px;
       opacity: 0.5;
-      left: 30px;
       transform: matrix(0, -1, 1, 0, 0, 0) rotate(268deg);
+
+      @include media-breakpoint-up(lg) {
+        top: -58px;
+        left: 30px;
+      }
     }
 
     .bg__figure--folder {
-      top: -50px !important;
-      left: 5px !important;
+      top: 0;
+      right: -20px;
+      left: 0;
+
+      @include media-breakpoint-up(lg) {
+        top: -50px !important;
+        left: 5px !important;
+      }
     }
   }
 
   &--faq {
-    padding-top: 60px;
-    margin-bottom: 100px;
+    padding-top: 20px;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 60px;
+      margin-bottom: 100px;
+    }
   }
 
   &__parallax {
