@@ -286,4 +286,17 @@
       }
     }
   }
+
+  &__image {
+    &--popup {
+      position: absolute;
+      width: 396px;
+      height: 529px;
+      left: -8px;
+      top: -11px;
+      background: no-repeat center;
+      background-size: contain;
+      background-image: url("../images/png/popup-img.png");
+    }
+  }
 }

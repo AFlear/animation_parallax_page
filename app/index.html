@@ -93,7 +93,7 @@
                                 Download
                             </a>
 
-                            <a href="#" class="button button--sm button--outline-gray" title="Sign up">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="button button--sm button--outline-gray" title="Sign up">
                                 Sign up
                             </a>
 
@@ -206,72 +206,77 @@
                         <div class="col-12 col-lg-10">
                             <div class="d-flex flex-wrap">
                                 <div class="calculator__item calculator__item--max">
-                                    <div class="calculator__item--inner">
-                                        <select class="js-select2-calculator d-none"
-                                                data-name="type"
-                                                id="calculator-colors"
-                                                data-style="select2-calculator">
-                                            <option>Colors</option>
-                                            <option value="red">Red</option>
-                                            <option value="green">Green</option>
-                                            <option value="blue">Blue</option>
-                                            <option value="orange">Orange</option>
-                                        </select>
-                                    </div>
-                                    <div class="calculator__item--inner">
-                                        <select class="js-select2-calculator d-none"
-                                                data-name="type"
-                                                id="calculator-size"
-                                                data-style="select2-calculator">
-                                            <option>Size</option>
-                                            <option value="red">Red</option>
-                                            <option value="green">Green</option>
-                                            <option value="blue">Blue</option>
-                                            <option value="orange">Orange</option>
-                                        </select>
-                                    </div>
-                                    <div class="calculator__item--inner d-flex align-items-center position-relative">
-                                        <button id="dec-number"
-                                                aria-label="Down"
-                                                class="calculator__button calculator__button--down"
-                                                type="button">
-                                                <span>
-                                                    <svg width="14" height="14" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg"><path
-                                                            d="M11.0834 6.4168H2.9167a.5833.5833 0 100 1.1666h8.1667a.5834.5834 0 100-1.1666z"
-                                                            fill="#111563" stroke="#111563" stroke-width=".5"/></svg>
-                                                </span>
-                                        </button>
-                                        <label for="calculator-input"></label>
+                                    <div class="row align-items-center w-100">
+                                        <div class="col-12 col-sm-6 col-lg-3 d-grid">
+                                            <select class="js-select2-calculator d-none"
+                                                    data-name="type"
+                                                    data-select2-id="calculator"
+                                                    id="calculator-colors"
+                                                    data-style="calculator">
+                                                <option>Colors</option>
+                                                <option value="red">Red</option>
+                                                <option value="green">Green</option>
+                                                <option value="blue">Blue</option>
+                                                <option value="orange">Orange</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-3 d-grid">
+                                            <select class="js-select2-calculator d-none"
+                                                    data-name="type"
+                                                    id="calculator-size"
+                                                    data-style="select2-calculator">
+                                                <option>Size</option>
+                                                <option value="red">Red</option>
+                                                <option value="green">Green</option>
+                                                <option value="blue">Blue</option>
+                                                <option value="orange">Orange</option>
+                                            </select>
+                                        </div>
 
-                                        <input class="input text-center"
-                                               id="calculator-input"
-                                               name="pages-control"
-                                               type="text"
-                                               value="100"
-                                               data-default="10"
-                                               data-min="3"
-                                               data-max="105"
-                                               maxlength="3"/>
+                                        <div class="col-12 col-sm-6 col-lg-3">
+                                            <div class="d-flex align-items-center position-relative">
+                                                <button id="dec-number"
+                                                        aria-label="Down"
+                                                        class="calculator__button calculator__button--down"
+                                                        type="button">
+                                                        <span>
+                                                            <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.0834 6.4168H2.9167a.5833.5833 0 100 1.1666h8.1667a.5834.5834 0 100-1.1666z" fill="#111563" stroke="#111563" stroke-width=".5"/></svg>
+                                                        </span>
+                                                </button>
+                                                <label for="calculator-input"></label>
+                                                <input class="input text-center"
+                                                       id="calculator-input"
+                                                       name="pages-control"
+                                                       type="text"
+                                                       value="100"
+                                                       data-default="10"
+                                                       data-min="3"
+                                                       data-max="105"
+                                                       maxlength="3"/>
+                                                <button id="inc-number"
+                                                        aria-label="Up"
+                                                        class="calculator__button calculator__button--up"
+                                                        type="button">
+                                                        <span>
+                                                            <svg width="14" height="14" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg"><path
+                                                                    d="M11.0834 6.4166h-3.5v-3.5a.5833.5833 0 10-1.1667 0v3.5h-3.5a.5833.5833 0 100 1.1666h3.5v3.5001a.5832.5832 0 00.9958.4124.5832.5832 0 00.1709-.4124v-3.5h3.5a.5834.5834 0 000-1.1667z"
+                                                                    fill="#111563" stroke="#111563" stroke-width=".5"/></svg>
+                                                        </span>
+                                                </button>
+                                            </div>
+                                        </div>
 
-                                        <button id="inc-number"
-                                                aria-label="Up"
-                                                class="calculator__button calculator__button--up"
-                                                type="button">
-                                            <span>
-                                                <svg width="14" height="14" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg"><path
-                                                        d="M11.0834 6.4166h-3.5v-3.5a.5833.5833 0 10-1.1667 0v3.5h-3.5a.5833.5833 0 100 1.1666h3.5v3.5001a.5832.5832 0 00.9958.4124.5832.5832 0 00.1709-.4124v-3.5h3.5a.5834.5834 0 000-1.1667z"
-                                                        fill="#111563" stroke="#111563" stroke-width=".5"/></svg>
-                                            </span>
-                                        </button>
-                                    </div>
-                                    <div class="calculator__item--inner">
-                                        <label for="calculator-calendar"></label>
-                                        <input class="input" type="date" id="calculator-calendar" name="trip-start"
-                                               value="2018-12-31"
-                                               data-date="" data-date-format="DD MMMM YYYY"
-                                               min="2018-01-01" max="2018-12-31">
+                                        <div class="col-12 col-sm-6 col-lg-3">
+                                          <span class="d-flex">
+                                              <label for="calculator-calendar"></label>
+                                              <input class="input input--date" type="date" id="calculator-calendar" name="trip-start"
+                                                     value="2021-12-31"
+                                                     data-date="" data-date-format="DD MMM YYYY"
+                                                     min="2018-01-01" max="2022-12-31">
+                                          </span>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div class="calculator__item calculator__item--min ms-auto ms-lg-0">
@@ -280,28 +285,30 @@
                                     </div>
                                 </div>
                                 <div class="calculator__item calculator__item--max">
-                                    <div>
-                                        <select class="js-select2-calculator d-none"
-                                                data-name="type"
-                                                id="calculator-city"
-                                                data-style="select2-calculator">
-                                            <option>City</option>
-                                            <option value="kyiv">Kyiv</option>
-                                            <option value="odessa">Odessa</option>
-                                            <option value="rivne">Rivne</option>
-                                            <option value="lviv">Lviv</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <select class="js-select2-calculator d-none"
-                                                data-name="type"
-                                                id="calculator-delivery"
-                                                data-style="select2-calculator">
-                                            <option>Delivery</option>
-                                            <option value="new-post">New Post</option>
-                                            <option value="ukrposhta">Urkposhta</option>
-                                            <option value="pickup">Pickup</option>
-                                        </select>
+                                    <div class="row align-items-center w-100">
+                                        <div class="col-12 col-sm-6 d-grid">
+                                            <select class="js-select2-calculator d-none"
+                                                    data-name="type"
+                                                    id="calculator-city"
+                                                    data-style="select2-calculator">
+                                                <option>City</option>
+                                                <option value="kyiv">Kyiv</option>
+                                                <option value="odessa">Odessa</option>
+                                                <option value="rivne">Rivne</option>
+                                                <option value="lviv">Lviv</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-sm-6 d-grid">
+                                            <select class="js-select2-calculator d-none"
+                                                    data-name="type"
+                                                    id="calculator-delivery"
+                                                    data-style="select2-calculator">
+                                                <option>Delivery</option>
+                                                <option value="new-post">New Post</option>
+                                                <option value="ukrposhta">Urkposhta</option>
+                                                <option value="pickup">Pickup</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="calculator__item calculator__item--min me-auto me-lg-0">
@@ -352,16 +359,6 @@
                             </ul>
 
                             <div class="position-relative">
-                                <div class="action-buttons">
-                                    <button id="prev-button" type="button"
-                                            class="btn btn-raised btn-secondary bmd-btn-fab">
-                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                    </button>
-                                    <button id="next-button" type="button"
-                                            class="btn btn-raised btn-secondary bmd-btn-fab">
-                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                    </button>
-                                </div>
                                 <div class="steps__slides">
                                     <div class="steps__slides--item current-slide">
                                         <div class="h3 text-color-blue-navy">
@@ -732,11 +729,10 @@
             <div class="d-flex justify-content-center">
                 <a class="review--slider__link" href="#" title="Read more">Read more</a>
             </div>
-            <div class="review--slider__dots"></div>
         </div>
     </section>
 
-    <section class="section--payment py--flexible-105">
+    <section class="section--payment">
         <div class="container">
             <div class="row position-relative mb-5">
                 <div class="col-12 col-lg-6 mt-lg-5 pt-lg-5">
@@ -860,7 +856,7 @@
 
     <section class="section--folder">
         <div class="container">
-            <div class="row position-relative mb-5">
+            <div class="row position-relative pb-lg-5 mb-5">
                 <div class="col-12 col-lg-6 pt-3 mt-3 mt-lg-0 order-1 order-lg-0">
                     <h2 class="h2 mb-3 text-color-blue-navy">
                         Temporibus autem quibusdam et aut officiis debitis
@@ -884,7 +880,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-column-reverse flex-lg-column row justify-content-between">
+            <div class="flex-column-reverse flex-lg-row row justify-content-between mt--flexible-105">
                 <div class="col-12 col-md-8 col-lg-5 order-1 order-lg-0 mt-2">
 
                     <div class="position-absolute z-index-n1">
@@ -1130,9 +1126,46 @@
             </div>
         </div>
     </footer>
-
 </main>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl px-5">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col-5">
+                    <div class="bg__image bg__image--popup"></div>
+                </div>
+                <div class="col-7">
+                    <div class="modal-block">
+                        <div class="modal-block__heading">
+                            <button type="button" class="btn-close modal-block--close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            <div class="modal-block__title">Sed ut perspiciatis</div>
+                            <div class="modal-block__subtitle">
+                                Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.
+                            </div>
+                        </div>
+                        <div class="modal-block__body">
+                            <div class="mb-2">
+                                <label for="email"></label>
+                                <input class="input--simple" type="email" name="email"  id="email" placeholder="deine@email.com">
+                            </div>
+                            <div class="mb-4">
+                                <label for="name"></label>
+                                <input class="input--simple" type="text" name="name" id="name" placeholder="Name">
+                            </div>
+                            <a href="#" class="button button--violet button--md" title="Ja, ich möchte!">
+                                Ja, ich möchte!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
 </body>
 
 </html>

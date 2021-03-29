@@ -10,6 +10,7 @@
 
     @include media-breakpoint-up(lg) {
       padding-top: 105px;
+      padding-bottom: 105px;
     }
 
     .bg__figure--dots {
@@ -92,11 +93,15 @@
     padding: 45px 0;
 
     @include media-breakpoint-up(lg) {
-      padding: 95px 0;
+      padding: 130px 0 0;
     }
   }
 
   &--payment {
+    @include media-breakpoint-up(lg) {
+      padding: 55px 0;
+    }
+
     .bg__figure--dots {
       top: 95px;
       left: 113px;
@@ -113,8 +118,8 @@
       transform: rotate(-115deg) !important;
 
       @include media-breakpoint-up(lg) {
-        top: 40px !important;
-        left: 60px !important;
+        top: 33px !important;
+        left: 165px !important;
       }
     }
 
@@ -124,8 +129,9 @@
       right: 0;
 
       @include media-breakpoint-up(lg) {
+        right: unset;
         top: 35px !important;
-        left: -65px !important;
+        left: 25px !important;
       }
     }
 
@@ -138,7 +144,8 @@
 
   &--list {
     @include media-breakpoint-up(lg) {
-      padding-top: 105px;
+      padding-top: 180px;
+      padding-bottom: 135px;
     }
 
     .bg__figure--dots {
@@ -176,6 +183,7 @@
   &--folder {
     @include media-breakpoint-up(lg) {
       padding-top: 105px;
+      padding-bottom: 105px;
     }
 
     .bg__figure--dots {
@@ -240,6 +248,7 @@
 
     @include media-breakpoint-up(lg) {
       padding-top: 0;
+      margin-top: 0;
     }
   }
 }

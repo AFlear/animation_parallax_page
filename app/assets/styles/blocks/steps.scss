@@ -34,6 +34,10 @@ $success-color: #2ecc71;
     flex-direction: column;
     color: $blue-dark;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     p {
       margin-top: 10px;
     }
@@ -112,6 +116,10 @@ $success-color: #2ecc71;
   }
 
   &__slides {
+    @include media-breakpoint-up(lg) {
+      padding-top: 23px;
+    }
+
     &--item {
       width: 100%;
       min-width: 100%;
@@ -129,23 +137,6 @@ $success-color: #2ecc71;
         padding: 1rem 3rem;
       }
     }
-  }
-}
-
-.action-buttons {
-  position: absolute;
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
-  z-index: 2;
-  padding: 1.2rem;
-
-  .bmd-btn-fab {
-    width: 2rem;
-    min-width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
-    background: transparent;
   }
 }
 

@@ -3,7 +3,7 @@
 $margin-between-slides: 1rem;
 
 .review--slider {
-  margin: 33px auto;
+  margin: 35px auto 23px;
 
   &__link {
     @include ff-epilogue;
@@ -48,11 +48,11 @@ $margin-between-slides: 1rem;
 }
 
 .slick-dots {
-  bottom: -85px;
+  bottom: -82px;
   li  {
     button {
       &::before {
-        font-size: 15px;
+        font-size: 17px;
         opacity: 1;
         color: $blue-light;
       }

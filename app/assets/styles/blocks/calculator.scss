@@ -9,6 +9,8 @@
 
   @include media-breakpoint-up(lg) {
     padding: 59px 0 45px;
+    max-width: 90%;
+    margin: auto;
   }
 
   &__head {
@@ -43,6 +45,7 @@
     margin: auto;
     border: 0;
     background-color: transparent;
+    z-index: 2;
 
     &--down {
       left: 10px;
@@ -55,6 +58,7 @@
 
   &__item {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     margin: 10px 0 20px;
 
@@ -73,6 +77,7 @@
 
       @include media-breakpoint-up(lg) {
         width: 80%;
+        order: unset;
       }
     }
 
@@ -89,11 +94,18 @@
 
       @include media-breakpoint-up(lg) {
         width: 20%;
+        padding-left: 15px;
+        order: unset;
       }
     }
 
     &--inner {
-      flex-basis: 45%;
+      //flex-basis: 45%;
+      //
+      //@include media-breakpoint-up(lg) {
+      //  flex-basis: auto;
+      //  width: 100%;
+      //}
     }
 
     .button {
