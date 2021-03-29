@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
+    <title>Test task</title>
     <meta charset="UTF-8">
     <meta name="language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,19 +27,19 @@
                         </a>
                     </div>
 
-                    <button class="navbar-toggler shadow-none px-0" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <div class="hamburger d-lg-none">
-                            <input id="hamburgerCheckbox" class="hamburger__input d-none" type="checkbox">
 
-                            <label for="hamburgerCheckbox" class="hamburger__label">
-                                <span class="hamburger__line"></span>
-                                <span class="hamburger__line"></span>
-                                <span class="hamburger__line"></span>
-                            </label>
-                        </div>
-                    </button>
+                    <div class="hamburger d-lg-none navbar-toggler"
+                         data-bs-toggle="collapse"
+                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                         aria-label="Toggle navigation">
+                        <input id="hamburgerCheckbox" class="hamburger__input d-none"  type="checkbox">
+
+                        <label for="hamburgerCheckbox" class="hamburger__label">
+                            <span class="hamburger__line"></span>
+                            <span class="hamburger__line"></span>
+                            <span class="hamburger__line"></span>
+                        </label>
+                    </div>
                     <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
                         <div class="d-flex col-12 col-lg-auto justify-content-center ms-lg-auto">
 
@@ -93,7 +94,8 @@
                                 Download
                             </a>
 
-                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="button button--sm button--outline-gray" title="Sign up">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                               class="button button--sm button--outline-gray" title="Sign up">
                                 Sign up
                             </a>
 
@@ -239,7 +241,10 @@
                                                         class="calculator__button calculator__button--down"
                                                         type="button">
                                                         <span>
-                                                            <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.0834 6.4168H2.9167a.5833.5833 0 100 1.1666h8.1667a.5834.5834 0 100-1.1666z" fill="#111563" stroke="#111563" stroke-width=".5"/></svg>
+                                                            <svg width="14" height="14" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg"><path
+                                                                    d="M11.0834 6.4168H2.9167a.5833.5833 0 100 1.1666h8.1667a.5834.5834 0 100-1.1666z"
+                                                                    fill="#111563" stroke="#111563" stroke-width=".5"/></svg>
                                                         </span>
                                                 </button>
                                                 <label for="calculator-input"></label>
@@ -269,7 +274,8 @@
                                         <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
                                           <span class="d-flex">
                                               <label for="calculator-calendar"></label>
-                                              <input class="input input--date" type="date" id="calculator-calendar" name="trip-start"
+                                              <input class="input input--date" type="date" id="calculator-calendar"
+                                                     name="trip-start"
                                                      value="2021-12-31"
                                                      data-date="" data-date-format="DD MMM YYYY"
                                                      min="2018-01-01" max="2022-12-31">
@@ -394,7 +400,7 @@
                                                             data-bs-toggle="pill"
                                                             data-bs-target="#v-pills-home" type="button" role="tab"
                                                             aria-controls="v-pills-home" aria-selected="true">
-                                                        <div class="tabs__item--marker"></div>
+                                                        <span class="tabs__item--marker"></span>
                                                         <span class="tabs__item--name">
                                             Nemo enim
                                         </span>
@@ -403,7 +409,7 @@
                                                             data-bs-toggle="pill"
                                                             data-bs-target="#v-pills-profile" type="button" role="tab"
                                                             aria-controls="v-pills-profile" aria-selected="false">
-                                                        <div class="tabs__item--marker"></div>
+                                                        <span class="tabs__item--marker"></span>
                                                         <span class="tabs__item--name">
                                             Die ipsam voluptatem
                                         </span>
@@ -412,7 +418,7 @@
                                                             data-bs-toggle="pill"
                                                             data-bs-target="#v-pills-messages" type="button" role="tab"
                                                             aria-controls="v-pills-messages" aria-selected="false">
-                                                        <div class="tabs__item--marker"></div>
+                                                        <span class="tabs__item--marker"></span>
                                                         <span class="tabs__item--name">
                                             Ut enim ad minima
                                         </span>
@@ -421,7 +427,7 @@
                                                             data-bs-toggle="pill"
                                                             data-bs-target="#v-pills-settings" type="button" role="tab"
                                                             aria-controls="v-pills-settings" aria-selected="false">
-                                                        <div class="tabs__item--marker"></div>
+                                                        <span class="tabs__item--marker"></span>
                                                         <span class="tabs__item--name">
                                             Quis autem vel
                                         </span>
@@ -430,7 +436,7 @@
                                                             data-bs-toggle="pill"
                                                             data-bs-target="#v-pills-set" type="button" role="tab"
                                                             aria-controls="v-pills-set" aria-selected="false">
-                                                        <div class="tabs__item--marker"></div>
+                                                        <span class="tabs__item--marker"></span>
                                                         <span class="tabs__item--name">
                                             Sed ut perspiciatis
                                         </span>
@@ -606,8 +612,10 @@
                         </div>
                         <div class="review-box__body">
                             <p class="review-box__text">
-                                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
-                                quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus
+                                id,
+                                quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor
+                                repellendus.
                                 Temporibus autem quibusdam.
                             </p>
                         </div>
@@ -640,8 +648,10 @@
                         </div>
                         <div class="review-box__body">
                             <p class="review-box__text">
-                                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
-                                quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus
+                                id,
+                                quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor
+                                repellendus.
                                 Temporibus autem quibusdam.
                             </p>
                         </div>
@@ -674,8 +684,10 @@
                         </div>
                         <div class="review-box__body">
                             <p class="review-box__text">
-                                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
-                                quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus
+                                id,
+                                quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor
+                                repellendus.
                                 Temporibus autem quibusdam.
                             </p>
                         </div>
@@ -708,8 +720,10 @@
                         </div>
                         <div class="review-box__body">
                             <p class="review-box__text">
-                                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id,
-                                quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                                Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus
+                                id,
+                                quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor
+                                repellendus.
                                 Temporibus autem quibusdam.
                             </p>
                         </div>
@@ -765,7 +779,7 @@
                                 <button class="tabs__item active" id="first-home-tab" data-bs-toggle="pill"
                                         data-bs-target="#first-home" type="button" role="tab"
                                         aria-controls="first-home" aria-selected="true">
-                                    <div class="tabs__item--marker"></div>
+                                    <span class="tabs__item--marker"></span>
                                     <span class="tabs__item--name">
                                             Temporibus autem
                                         </span>
@@ -773,7 +787,7 @@
                                 <button class="tabs__item" id="second-profile-tab" data-bs-toggle="pill"
                                         data-bs-target="#second-profile" type="button" role="tab"
                                         aria-controls="second-profile" aria-selected="false">
-                                    <div class="tabs__item--marker"></div>
+                                    <span class="tabs__item--marker"></span>
                                     <span class="tabs__item--name">
                                             Nam libero
                                         </span>
@@ -781,7 +795,7 @@
                                 <button class="tabs__item" id="third-messages-tab" data-bs-toggle="pill"
                                         data-bs-target="#third-messages" type="button" role="tab"
                                         aria-controls="third-messages" aria-selected="false">
-                                    <div class="tabs__item--marker"></div>
+                                    <span class="tabs__item--marker"></span>
                                     <span class="tabs__item--name">
                                            Et harum
                                         </span>
@@ -1128,7 +1142,7 @@
     </footer>
 </main>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-xl px-5">
         <div class="modal-content">
             <div class="row">
@@ -1138,17 +1152,20 @@
                 <div class="col-7">
                     <div class="modal-block">
                         <div class="modal-block__heading">
-                            <button type="button" class="btn-close modal-block--close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close modal-block--close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
 
                             <div class="modal-block__title">Sed ut perspiciatis</div>
                             <div class="modal-block__subtitle">
-                                Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.
+                                Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, ut enim ad
+                                minima veniam, quis nostrum exercitationem ullam corporis.
                             </div>
                         </div>
                         <div class="modal-block__body">
                             <div class="mb-2">
                                 <label for="email"></label>
-                                <input class="input--simple" type="email" name="email"  id="email" placeholder="deine@email.com">
+                                <input class="input--simple" type="email" name="email" id="email"
+                                       placeholder="deine@email.com">
                             </div>
                             <div class="mb-4">
                                 <label for="name"></label>

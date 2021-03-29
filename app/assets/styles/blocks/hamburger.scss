@@ -1,7 +1,7 @@
 .hamburger {
   $root: &;
-  width: 100%;
-  height: 20px;
+  width: auto;
+  height: 30px;
   margin-right: 7px;
 
   &__input {
