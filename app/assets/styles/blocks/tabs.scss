@@ -1,10 +1,12 @@
 .tabs {
   $this: &;
-  flex-wrap: nowrap;
   padding: 20px 0;
 
-  @include media-breakpoint-up(lg) {
-    flex-wrap: wrap;
+  @include media-breakpoint-down(lg) {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   &__item {
@@ -16,17 +18,25 @@
     color: $grey-light;
     background: transparent;
     font-weight: normal;
-    padding-right: 10px;
 
     &:not(:last-child) {
+      padding-right: 15px;
+
       @include media-breakpoint-up(lg) {
+        padding-right: 0;
         padding-bottom: 30px;
       }
+    }
+
+    @include media-breakpoint-up(sm) {
+      font-size: 16px;
+      line-height: 24px;
     }
 
     @include media-breakpoint-up(lg) {
       font-size: 22px;
       line-height: 22.55px;
+      padding-right: 0;
     }
 
     &--marker {
@@ -62,7 +72,7 @@
       line-height: 27px;
       color: $violet-primary;
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         font-size: 22px;
         line-height: 22.55px;
         font-weight: bold;

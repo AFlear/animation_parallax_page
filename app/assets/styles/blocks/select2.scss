@@ -195,6 +195,11 @@
             border-radius: 20px;
             width: 2px;
             height: 9px;
+
+            @include media-breakpoint-only(xs) {
+              height: 7px;
+            }
+
           }
 
           &::after {
@@ -204,6 +209,10 @@
             transform: rotate(-45deg);
             transition: 0.5s all ease;
             background: #7E8183;
+
+            @include media-breakpoint-only(xs) {
+              right: 6px;
+            }
           }
 
           &::before {
@@ -213,6 +222,10 @@
             transform: rotate(45deg);
             transition: 0.5s all ease;
             background: #7E8183;
+
+            @include media-breakpoint-only(xs) {
+              left: 6px;
+            }
           }
         }
       }
@@ -233,13 +246,16 @@
         justify-content: space-between;
         padding: 0 25px;
         border: 0;
-        background-color: transparent;
         background: $blue-transparent;
         box-shadow: 0 1px 3px rgba(5, 41, 83, 0.14);
         border-radius: 10px !important;
         width: 100%;
         height: 50px;
         color: $blue-navy;
+
+        @include media-breakpoint-only(xs) {
+          padding: 0 33px 0 25px;
+        }
 
         &:hover {
           box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.05);
@@ -259,6 +275,11 @@
           color: $blue-navy;;
           padding: 0;
           max-width: 100%;
+
+          @include media-breakpoint-only(xs) {
+            font-size: 15px;
+            line-height: 20px;
+          }
         }
       }
 

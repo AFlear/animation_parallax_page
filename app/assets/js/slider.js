@@ -9,21 +9,29 @@ return $('.js-init[data-slick]').each((i, sliderNode) => {
             slidesToScroll: 3,
             fade: false,
             initialSlide: 1,
-            responsive: [{
-                breakpoint: 560,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        centerMode: true,
+                        variableWidth: true,
+                        mobileFirst: true,
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-
-            }]
+                ]
         }
     };
     let preset = presets[$slider.data('preset')] || {};
     $slider.slick($.extend({
         arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
     }, preset));
 });
 }

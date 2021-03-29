@@ -196,11 +196,14 @@
       }
 
       @include media-breakpoint-up(lg) {
-        width: 682px;
-        height: 646px;
-        background-size: auto;
         top: -22px;
         right: -90px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        background-size: auto;
+        width: 682px;
+        height: 646px;
       }
     }
 

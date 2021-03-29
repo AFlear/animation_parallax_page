@@ -3,12 +3,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px;
+  padding: 30px 18px;
   border-radius: 8px;
-  min-width: 300px;
   width: 100%;
 
   @include media-breakpoint-up(md) {
+    min-width: 300px;
+    width: 360px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 30px;
+  }
+
+  @include media-breakpoint-up(xxl) {
     width: 380px;
   }
 
@@ -39,15 +47,25 @@
   }
 
   &__body {
-    height: 320px;
-    padding-top: 23px;
+    height: 255px;
+    padding-top: 27px;
+
+    @include media-breakpoint-up(md) {
+      height: 320px;
+      padding-top: 23px;
+    }
   }
 
   &__text {
-    font-size: 18px;
-    line-height: 25.5px;
+    font-size: 16px;
+    line-height: 22px;
     font-style: italic;
     color: $grey-light;
+
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      line-height: 25.5px;
+    }
   }
 
   &__footer {

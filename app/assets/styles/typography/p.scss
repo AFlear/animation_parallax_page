@@ -10,6 +10,14 @@
   @include p1;
 }
 
+.p1-s {
+  @include p2;
+
+  @include media-breakpoint-up(md) {
+    @include p1;
+  }
+}
+
 .p2 {
   @include p2;
 }

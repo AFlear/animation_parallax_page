@@ -1,14 +1,17 @@
 .calculator {
   display: block;
-  padding: 40px 0 24px;
+  padding: 20px 0 24px;
   box-shadow: $box-shadow-primary;
 
   @include media-breakpoint-up(md) {
-    padding: 49px 0 25px;
+    padding: 49px 0 40px;
   }
 
   @include media-breakpoint-up(lg) {
     padding: 59px 0 45px;
+  }
+
+  @include media-breakpoint-up(xxl) {
     max-width: 90%;
     margin: auto;
   }
@@ -19,6 +22,10 @@
 
   &__body {
     color: $blue-navy;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 20px;
+    }
   }
 
   &__total {
@@ -48,11 +55,19 @@
     z-index: 2;
 
     &--down {
-      left: 10px;
+      left: 23px;
+
+      @include media-breakpoint-up(md) {
+        left: 10px;
+      }
     }
 
     &--up {
-      right: 10px;
+      right: 23px;
+
+      @include media-breakpoint-up(md) {
+        right: 10px;
+      }
     }
   }
 
@@ -60,10 +75,14 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10px 0 20px;
 
     @include media-breakpoint-up(sm) {
+      margin: 10px 0 20px;
       justify-content: space-between;
+    }
+
+    @include media-breakpoint-only(md) {
+      margin: 10px 0 5px;
     }
 
     &--max {
@@ -83,7 +102,6 @@
 
     &--min {
       width: 100%;
-      padding-left: 16px;
       justify-content: center;
       order: 2;
 
@@ -92,9 +110,16 @@
         padding-left: 5px;
       }
 
+      @include media-breakpoint-up(md) {
+        padding-left: 16px;
+      }
+
+      @include media-breakpoint-only(md) {
+        margin-top: 25px;
+      }
+
       @include media-breakpoint-up(lg) {
         width: 20%;
-        padding-left: 15px;
         order: unset;
       }
     }

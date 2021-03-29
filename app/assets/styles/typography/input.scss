@@ -1,19 +1,23 @@
 .input {
-  @include p1;
   position: relative;
   width: 100%;
-  max-width: 290px;
   height: 50px;
   padding: 10px 27px;
   border-radius: 10px;
+  font-size: 15px;
   box-shadow: 0 1px 3px rgba(5, 41, 83, 0.14);
   border: 0;
   background-color: $blue-transparent;
   box-sizing: border-box;
   color: $blue-navy;
 
-  @include media-breakpoint-up(md) {
-    max-width: 300px;
+  @include media-breakpoint-up(sm) {
+    @include p1;
+    max-width: 290px;
+  }
+
+  @include media-breakpoint-only(md) {
+    max-width: 100%;
   }
 
   @include media-breakpoint-up(lg) {
@@ -36,14 +40,30 @@
   }
 
   &--date {
-    @include p1;
     color: $blue-navy;
+    font-size: 15px;
+
+    @include media-breakpoint-up(sm) {
+      @include p1;
+    }
 
     &::before {
       position: absolute;
       display: inline-block;
-      right: 15px;
+      right: 30%;
       content: attr(data-date);
+
+      @include media-breakpoint-up(md) {
+        right: 25%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        right: 10px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        right: 15px;
+      }
     }
 
     &::-webkit-datetime-edit,
@@ -54,9 +74,21 @@
 
     &::-webkit-calendar-picker-indicator {
       position: absolute;
-      left: 0;
       color: $blue-navy;
       opacity: 1;
+      left: 20%;
+
+      @include media-breakpoint-up(md) {
+        left: 15%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        left: -17px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        left: 0;
+      }
     }
   }
 }

@@ -1,16 +1,6 @@
 /* stylelint-disable */
 
-$step-size: 50px;
-$border-color-disabled: #A8A8A8;
-$line-color-disabled: #DCDCDC;
-$disabled-color: #A8A8A8;
-
-$border-color-current: #3498db;
-$current-color: #3498db;
-
-$border-color-success: #2ecc71;
-$line-color-success: #2ecc71;
-$success-color: #2ecc71;
+$step-size: 40px;
 
 .steps {
   &__list {
@@ -21,8 +11,12 @@ $success-color: #2ecc71;
     list-style: none;
     position: relative;
     overflow: hidden;
-    justify-content: center;
+    justify-content: space-between;
     counter-reset: li;
+
+    @include media-breakpoint-up(md) {
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -48,9 +42,13 @@ $success-color: #2ecc71;
       height: 2px;
       background-color: $blue-light;
       width: 100%;
-      top: 25px;
+      top: 20px;
       left: 50%;
       transition: background-color .2s ease;
+
+      @include media-breakpoint-up(md) {
+        top: 25px;
+      }
     }
 
     &:last-child:after {
